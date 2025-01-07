@@ -8,15 +8,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#FBFAF',
+        bgColor: '#FBFAF',
         searchText: '#333333',
+        searchBg: '#8B8B8B',
         main: '#D3E1CE',
         secondary: '#E8DFCA',
         blackText: '#1F1F1F',
         darkBg: '#323232',
         darkMain: '#3D5163',
         darkSecondary: '#451925',
-        whiteText: '#451925'
+        whiteText: '#E6E6E6'
       },
       fontFamily: {
         main: "'Noto Serif', 'serif'"

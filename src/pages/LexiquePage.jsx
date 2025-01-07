@@ -13,11 +13,11 @@ const LexiquePage = () => {
 
       <div className='flex flex-row items-center justify-around my-14 ml-14'>
         <Link to="/lexique/alphabet">
-          <LexiqueCard label="Alphabet" desc="Découvrez comment signer chaque lettre de l'alphabet et apprenez à épeler des mots ou des noms." bgImg="src/assets/vectors/AlphabetShape.svg" img="/images/AlphabetPic.png" />
+          <LexiqueCard label="Alphabet" desc="Découvrez comment signer chaque lettre de l'alphabet et apprenez à épeler des mots ou des noms." bgImg="src/assets/vectors/AlphabetShape.svg" darkBgImg="src/assets/vectors/AlphabetShapeDark.svg" img="/images/AlphabetPic.png" />
         </Link>
 
         <Link to="/lexique/vocabulaire">
-          <LexiqueCard label="Vocabulaire" desc="Familiarisez-vous avec des mots et expressions courants pour communiquer efficacement dans la vie quotidienne." bgImg="src/assets/vectors/VocabulaireShape.svg" img="/images/VocabulairePic.png" />
+          <LexiqueCard label="Vocabulaire" desc="Familiarisez-vous avec des mots et expressions courants pour communiquer efficacement dans la vie quotidienne." bgImg="src/assets/vectors/VocabulaireShape.svg" darkBgImg="src/assets/vectors/VocabulaireShapeDark.svg" img="/images/VocabulaireP.png" />
         </Link>
       </div>
       

@@ -1,13 +1,14 @@
 import React from 'react'
 import SearchBar from './SearchBar'
 import { Link } from 'react-router-dom'
-import { Moon } from 'lucide-react'
+import ThemeSwitch from './ThemeSwitch.jsx'
 
 const Header = () => {
     return (
         <header className='flex items-center p-1 m-2 mx-5'>
             <Link to="/" className='p-1 pb-6'>
-                <img src='/vectors/Logo.svg' width={500} alt="Logo Signons" />
+                <img src={'/vectors/Logo.svg'} width={500} alt="Logo Signons" className='dark:hidden' />
+                <img src={'/vectors/DarkLogo.svg'} width={500} alt="Logo Signons" className='hidden dark:block' />
             </Link>
 
             <SearchBar />
@@ -27,9 +28,7 @@ const Header = () => {
                 </Link>
             </nav>
 
-            <button type="button" className='hover:translate-x-[1px] hover:translate-y-[1px]'>
-                <Moon color="#1F1F1F" size={36} className='m-4 mx-10' />
-            </button>
+            <ThemeSwitch />
         </header>
     )
 }

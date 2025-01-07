@@ -5,7 +5,7 @@ import ZoomFunc from '../components/ZoomFunc'
 const HomePage = () => {
     return (
         <main className='flex-grow flex justify-evenly relative'>
-            <section className='w-[40%] p-10 bg-[url("assets/vectors/AcceuilShape.svg")] bg-contain bg-no-repeat'>
+            <section className='w-[40%] p-10 bg-[url("assets/vectors/AcceuilShape.svg")] dark:bg-[url("assets/vectors/AcceuilShapeDark.svg")] bg-contain bg-no-repeat'>
                 <h1 className='font-bold text-display text-center p-1 m-2 mb-4'>Une langue pour tous !</h1>
                 <p className='text-bodyText text-justify'>Un espace dédié à la découverte, l'apprentissage, et la célébration des langues des signes.</p>
                 <h4 className='font-bold text-bodyText'>Sur notre site vous allez apprendre sur :</h4>
@@ -26,13 +26,13 @@ const HomePage = () => {
             </section>
 
             <article className='w-[40%]'>
-                <h1 className='text-heading font-bold bg-main rounded-full w-fit px-5 py-2'>Actualités de la semaine</h1>
+                <h1 className='text-heading font-bold bg-main rounded-full w-fit px-5 py-2 dark:bg-darkMain'>Actualités de la semaine</h1>
                 <NewsCard />
-                <hr className='border-blackText' />
+                <hr className='border-blackText dark:border-whiteText' />
                 <NewsCard />
-                <hr className='border-blackText' />
+                <hr className='border-blackText dark:border-whiteText' />
                 <NewsCard />
-                <hr className='border-blackText' />
+                <hr className='border-blackText dark:border-whiteText' />
                 <p className='text-end'>
                     <span className='font-bold'>Source : </span>https://www.media-pi.fr/
                 </p>

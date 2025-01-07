@@ -13,13 +13,15 @@ const OriginePage = () => {
           </div>
 
           <div>
-            <img src="/images/INJS.png" width={650} alt="Institut National des Jeunes Sourds, Paris en 'année'" className='p-2 m-2' />
-            <p className='text-center'><span className='font-bold'>Source : </span>https://injs-bordeaux.org/linjs/historique/</p>
+            <img src="/images/INJS.png" width={650} alt="Institut National des Jeunes Sourds, Paris en 'année'" className='p-2 m-2 dark:hidden' />
+            <img src="/images/INJSDark.png" width={650} alt="Institut National des Jeunes Sourds, Paris en 'année'" className='p-2 m-2 hidden dark:block' />
+            <p className='text-end'><span className='font-bold'>Source : </span>https://injs-bordeaux.org/linjs/historique/</p>
           </div>
         </div>
 
         <div className='mt-20'>
-          <img src="/images/AbbeEpee.png" width={390} alt="Abbée de l'Epée" className='p-1' />
+          <img src="/images/AbbeEpee.png" width={390} alt="Abbée de l'Epée" className='p-1 dark:hidden' />
+          <img src="/images/AbbeEpeeDark.png" width={390} alt="Abbée de l'Epée" className='p-1 hidden dark:block' />
           <p className='text-center'><span className='font-bold'>Source : </span>https://fr.wikipedia.org/</p>
         </div>
       </div>
@@ -38,14 +40,16 @@ const OriginePage = () => {
         </div>
 
         <div className='mt-20'>
-          <img src="/images/NotreDame.png" width={400} alt="Notre de Dame de Paris en 'année'" className='p-2 m-2 mt-10' />
+          <img src="/images/NotreDame.png" width={400} alt="Notre de Dame de Paris en 'année'" className='p-2 m-2 mt-10 dark:hidden' />
+          <img src="/images/NotreDameDark.png" width={400} alt="Notre de Dame de Paris en 'année'" className='p-2 m-2 mt-10 hidden dark:block' />
           <p className='text-center'><span className='font-bold'>Source : </span>https://commons.wikimedia.org/</p>
         </div>
       </div>
 
       <div className='flex flex-row items-end'>
         <div>
-          <img src="/images/ReveilSourd.png" width={500} alt="Pièce théâtrales LSF" className='p-2 m-2' />
+          <img src="/images/ReveilSourd.png" width={500} alt="Pièce théâtrales LSF" className='p-2 m-2 dark:hidden' />
+          <img src="/images/ReveilSourdDark.png" width={500} alt="Pièce théâtrales LSF" className='p-2 m-2 hidden dark:block' />
           <p className='text-center'><span className='font-bold'>Source : </span>https://compagniedubonheur.fr/</p>
         </div>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LexiqueCard = ({ label, desc, bgImg, img }) => {
+const LexiqueCard = ({ label, desc, bgImg, darkBgImg, img }) => {
     return (
         <div className='flex flex-row items-start justify-start w-full bg-contain bg-no-repeat p-4 m-3 ml-6 hover:translate-x-[1px] hover:translate-y-[1px] hover:underline' style={{ backgroundImage: `url(${bgImg})` }}>
             <div className='w-[45%]'>
