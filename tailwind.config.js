@@ -29,7 +29,10 @@ export default {
       },
       boxShadow: {
         'custom-box': '2px 2px 3px 1px rgb(0 0 0 / 25%)'
-      }
+      },
+      gridTemplateCols: {
+        'custom': 'repeat(3, minmax(0, 200px))', // Custom template for rows
+      },
     },
   },
   plugins: [],

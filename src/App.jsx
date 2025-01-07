@@ -5,6 +5,7 @@ import OriginePage from "./pages/OriginePage";
 import HistoirePage from "./pages/HistoirePage";
 import LexiquePage from "./pages/LexiquePage";
 import MediasPage from "./pages/MediasPage";
+import MissingPage from "./pages/MissingPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="histoire" element={<HistoirePage />} />
           <Route path="lexique" element={<LexiquePage />} />
           <Route path="medias" element={<MediasPage />} />
+          <Route path="*" element={<MissingPage />} />
         </Route>
       </Routes>
     </Router>

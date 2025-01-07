@@ -27,7 +27,7 @@ const Header = () => {
                 </Link>
             </nav>
 
-            <button type="button">
+            <button type="button" className='hover:translate-x-[1px] hover:translate-y-[1px]'>
                 <Moon color="#1F1F1F" size={36} className='m-4 mx-10' />
             </button>
         </header>

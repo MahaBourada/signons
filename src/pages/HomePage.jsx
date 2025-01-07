@@ -1,11 +1,12 @@
 import React from 'react'
 import NewsCard from '../components/NewsCard'
+import ZoomFunc from '../components/ZoomFunc'
 
 const HomePage = () => {
     return (
-        <main className='flex-grow flex justify-evenly'>
+        <main className='flex-grow flex justify-evenly relative'>
             <section className='w-[40%] p-10 bg-[url("assets/vectors/AcceuilShape.svg")] bg-contain bg-no-repeat'>
-                <h1 className='font-bold text-display text-center'>Une langue pour tous !</h1>
+                <h1 className='font-bold text-display text-center p-1 m-2 mb-4'>Une langue pour tous !</h1>
                 <p className='text-bodyText text-justify'>Un espace dédié à la découverte, l'apprentissage, et la célébration des langues des signes.</p>
                 <h4 className='font-bold text-bodyText'>Sur notre site vous allez apprendre sur :</h4>
                 <ul className='text-bodyText text-justify'>
@@ -36,6 +37,8 @@ const HomePage = () => {
                     <span className='font-bold'>Source : </span>https://www.media-pi.fr/
                 </p>
             </article>
+
+            <ZoomFunc />
         </main>
     )
 }
