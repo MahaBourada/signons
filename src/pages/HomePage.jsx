@@ -1,23 +1,22 @@
 import React from "react";
 import NewsCard from "../components/NewsCard";
-import ZoomFunc from "../components/ZoomFunc";
 
 const HomePage = () => {
   return (
     <main className="flex-grow flex justify-evenly relative">
       <section className='w-[40%] p-10 bg-[url("assets/vectors/AcceuilShape.svg")] dark:bg-[url("assets/vectors/AcceuilShapeDark.svg")] bg-contain bg-no-repeat'>
-        <h1 className="font-bold text-display text-center p-1 m-2 mb-4">
+        <h1 className="font-bold text-dynamic-2xl text-center p-1 m-2">
           Une langue pour tous !
         </h1>
-        <p className="text-bodyText text-justify my-5">
+        <p className="text-justify">
           Un espace dédié à la découverte, l'apprentissage, et la célébration
           des langues des signes.
         </p>
-        <div className="ml-4">
-          <h4 className="font-bold text-bodyText">
+        <div className="ml-4 my-3">
+          <h4 className="font-bold">
             Sur notre site vous allez apprendre sur :
           </h4>
-          <ul className="text-bodyText text-justify list-disc ml-8 mr-2">
+          <ul className="text-justify list-disc ml-8 mr-2">
             <li>
               <span className="font-bold">
                 L'histoire et l'évolution de la LSF :{" "}
@@ -46,7 +45,7 @@ const HomePage = () => {
       </section>
 
       <article className="w-[43%]">
-        <h1 className="text-heading font-bold bg-main rounded-full w-fit px-7 py-2 dark:bg-darkMain">
+        <h1 className="text-dynamic-lg font-bold bg-main rounded-full w-fit px-7 py-1 dark:bg-darkMain">
           Actualités de la semaine
         </h1>
         <div className="ml-4">
@@ -77,14 +76,12 @@ const HomePage = () => {
           <a
             href="https://www.media-pi.fr/"
             target="_blank"
-            className="flex justify-end hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
+            className="flex justify-end text-dynamic-sm hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
           >
             <span className="font-bold">Source : </span>https://www.media-pi.fr/
           </a>
         </div>
       </article>
-
-      <ZoomFunc />
     </main>
   );
 };

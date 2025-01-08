@@ -1,16 +1,15 @@
 import React from "react";
 import LexiqueCard from "../components/LexiqueCard";
 import { Link } from "react-router-dom";
-import ZoomFunc from "../components/ZoomFunc";
 
 const LexiquePage = () => {
   return (
     <main className="flex-grow mx-24">
       <div className="w-3/4 mb-6">
-        <h1 className="text-heading font-bold">
+        <h1 className="text-dynamic-2xl font-bold">
           Lexique de la Langue des Signes Française (LSF)
         </h1>
-        <p className="text-bodyText text-justify m-2">
+        <p className="text-dynamic-base leading-9 text-justify ml-3 mr-1 my-1">
           Cette section est dédiée à l'apprentissage des bases essentielles de
           la LSF. Que vous soyez débutant ou que vous souhaitiez approfondir vos
           connaissances, vous y trouverez des ressources clés pour explorer
@@ -37,8 +36,6 @@ const LexiquePage = () => {
           />
         </Link>
       </div>
-
-      <ZoomFunc />
     </main>
   );
 };

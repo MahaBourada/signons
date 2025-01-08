@@ -1,5 +1,4 @@
 import React from "react";
-import ZoomFunc from "../components/ZoomFunc";
 
 const MissingPage = () => {
   return (
@@ -19,8 +18,6 @@ const MissingPage = () => {
         alt="Page introuvable"
         className="p-3 m-auto hidden dark:block"
       />
-
-      <ZoomFunc />
     </main>
   );
 };

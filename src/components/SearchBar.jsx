@@ -6,7 +6,7 @@ const SearchBar = () => {
     <form className="flex items-center justify-center w-full shadow-boxShadow m-10">
       <input
         type="text"
-        className="text-bodyText w-[80%] h-14 rounded-full px-7 py-5 shadow-custom-box text-blackText focus:outline-none placeholder-searchText bg-bgColor dark:bg-searchBg"
+        className="text-dynamic-base w-[80%] h-14 rounded-full px-7 py-5 shadow-custom-box text-blackText focus:outline-none placeholder-searchText bg-bgColor dark:bg-searchBg"
         placeholder="Rechercher"
       />
       <button type="submit" className="relative">

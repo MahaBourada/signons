@@ -1,5 +1,4 @@
-import React from "react";
-import ZoomFunc from "../components/ZoomFunc";
+import React from"react";
 
 const OriginePage = () => {
   return (
@@ -7,10 +6,10 @@ const OriginePage = () => {
       <div className="flex flex-row items-start justify-between">
         <div className="flex flex-col items-center w-3/4">
           <div className="m-6 mb-10">
-            <h1 className="text-heading font-bold m-1 my-2">
+            <h1 className="text-dynamic-2xl font-bold m-1 my-1">
               Quand est-ce que ça a commencé ?
             </h1>
-            <p className="text-bodyText text-justify mx-3">
+            <p className=" text-justify mx-5">
               L'histoire de la langue des signes française remonte au XVIIIe
               siècle, grâce aux efforts du prêtre Charles-Michel de l'Épée.
               Connu comme le « père de l'éducation des sourds », il a développé
@@ -40,7 +39,7 @@ const OriginePage = () => {
             <a
               href="https://injs-bordeaux.org/linjs/historique/"
               target="_blank"
-              className="absolute bottom-9 right-6 text-end hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
+              className="absolute bottom-9 right-6 text-end text-dynamic-sm hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
             >
               <span className="font-bold">Source : </span>
               https://injs-bordeaux.org/linjs/historique/
@@ -64,7 +63,7 @@ const OriginePage = () => {
           <a
             href="https://fr.wikipedia.org/"
             target="_blank"
-            className="absolute -bottom-3 text-end hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
+            className="absolute -bottom-3 text-end text-dynamic-sm hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
           >
             <span className="font-bold">Source : </span>
             https://fr.wikipedia.org/
@@ -75,10 +74,10 @@ const OriginePage = () => {
       <div className="flex flex-row items-start justify-between">
         <div className="w-3/4">
           <div className="m-6 mb-10">
-            <h1 className="text-heading font-bold m-1 my-2">
+            <h1 className="text-dynamic-2xl font-bold m-1 my-1">
               Premier obstacle : l'interdiction
             </h1>
-            <p className="text-bodyText text-justify mx-3">
+            <p className=" text-justify mx-5">
               Malheureusement, en 1880, le Congrès de Milan a porté un coup
               sévère à l'enseignement en langue des signes. Les éducateurs de
               l'époque ont décidé de privilégier l'oralisation, interdisant
@@ -93,10 +92,10 @@ const OriginePage = () => {
           </div>
 
           <div className="m-6 mb-10">
-            <h1 className="text-heading font-bold m-1 my-2">
+            <h1 className="text-dynamic-2xl font-bold m-1 my-1">
               Une renaissance progressive
             </h1>
-            <p className="text-bodyText text-justify mx-3">
+            <p className=" text-justify mx-5">
               Au milieu du XXe siècle, le mouvement pour les droits des sourds a
               commencé à gagner en force. Les associations de personnes sourdes
               ont joué un rôle clé dans la promotion de la langue des signes et
@@ -126,7 +125,7 @@ const OriginePage = () => {
           <a
             href="https://commons.wikimedia.org/"
             target="_blank"
-            className="absolute -bottom-3 text-end hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
+            className="absolute -bottom-3 text-end text-dynamic-sm hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
           >
             <span className="font-bold">Source : </span>
             https://commons.wikimedia.org/
@@ -151,7 +150,7 @@ const OriginePage = () => {
           <a
             href="https://compagniedubonheur.fr/"
             target="_blank"
-            className="absolute bottom-3 ml-5 text-end hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
+            className="absolute bottom-3 ml-5 text-end text-dynamic-sm hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
           >
             <span className="font-bold">Source : </span>
             https://compagniedubonheur.fr/
@@ -159,10 +158,10 @@ const OriginePage = () => {
         </div>
 
         <div className="m-6 mb-10 w-3/4">
-          <h1 className="text-heading font-bold m-1 my-2">
+          <h1 className="text-dynamic-2xl font-bold m-1 my-1">
             La reconnaissance officielle
           </h1>
-          <p className="text-bodyText text-justify mx-3">
+          <p className=" text-justify mx-5">
             En 1991, une avancée majeure a été franchie avec la loi Fabius, qui
             a autorisé l'usage de la LSF dans l'enseignement. Plus tard, en
             2005, la loi sur l'égalité des droits et des chances a
@@ -175,8 +174,8 @@ const OriginePage = () => {
       </div>
 
       <div className="m-6 mb-10">
-        <h1 className="text-heading font-bold m-1 my-2">La LSF aujourd'hui</h1>
-        <p className="text-bodyText text-justify mx-3">
+        <h1 className="text-dynamic-2xl font-bold m-1 my-1">La LSF aujourd'hui</h1>
+        <p className=" text-justify mx-5">
           De nos jours, la LSF est enseignée dans de nombreuses écoles,
           universités et centres de formation. Elle est également valorisée dans
           la culture populaire à travers des films, des séries et des événements
@@ -194,8 +193,8 @@ const OriginePage = () => {
       </div>
 
       <div className="m-6 mb-10">
-        <h1 className="text-heading font-bold m-1 my-2">Bibliographie</h1>
-        <ul className="mx-10 list-disc text-bodyText">
+        <h1 className="text-dynamic-2xl font-bold m-1 my-1">Bibliographie</h1>
+        <ul className="mx-10 list-disc">
           <li className="hover:translate-x-[1px] hover:translate-y-[1px]">
             <a
               href="https://adsignes.fr/histoire-langue-des-signes"
@@ -234,8 +233,6 @@ const OriginePage = () => {
           </li>
         </ul>
       </div>
-
-      <ZoomFunc />
     </main>
   );
 };

@@ -4,6 +4,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontSize: {
+        'dynamic-sm': 'calc(var(--font-base, 1.25rem) / 1.2)',
+        'dynamic-base': 'var(--font-base, 1.25rem)',
+        'dynamic-lg': 'calc(var(--font-base, 1.25rem) * 1.2)',
+        'dynamic-xl': 'calc(var(--font-base, 1.25rem) * 1.5)',
+        'dynamic-2xl': 'calc(var(--font-base, 1.25rem) * 1.75)',
+      },
       backgroundImage: {
         alphabetLight: "url('/src/assets/vectors/AlphabetShape.svg')",
         alphabetDark: "url('/src/assets/vectors/AlphabetShapeDark.svg')",
@@ -24,11 +31,6 @@ export default {
       },
       fontFamily: {
         main: "'Noto Serif', 'serif'",
-      },
-      fontSize: {
-        display: "28pt",
-        heading: "22pt",
-        bodyText: "15.5pt",
       },
       boxShadow: {
         "custom-box": "2px 2px 3px 1px rgb(0 0 0 / 25%)",

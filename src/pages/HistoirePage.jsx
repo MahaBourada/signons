@@ -1,7 +1,6 @@
 import React from "react";
 import HistoireCard from "../components/HistoireCard";
 import { Link } from "react-router-dom";
-import ZoomFunc from "../components/ZoomFunc";
 
 const HistoirePage = () => {
   return (
@@ -37,8 +36,6 @@ const HistoirePage = () => {
           img="/images/Japon.png"
         />
       </Link>
-
-      <ZoomFunc />
     </main>
   );
 };

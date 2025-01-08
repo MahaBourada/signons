@@ -1,6 +1,6 @@
 import React from "react";
 import SearchBar from "./SearchBar";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import ThemeSwitch from "./ThemeSwitch.jsx";
 
 const Header = () => {
@@ -11,43 +11,59 @@ const Header = () => {
           src={"/vectors/Logo.svg"}
           width={500}
           alt="Logo Signons"
-          className="dark:hidden"
+          className="dark:hidden w-[34rem]"
         />
         <img
           src={"/vectors/LogoDark.svg"}
           width={500}
           alt="Logo Signons"
-          className="hidden dark:block"
+          className="hidden dark:block w-[34rem]"
         />
       </Link>
 
       <SearchBar />
 
-      <nav className="flex justify-between items-center w-[75%] text-bodyText font-bold">
-        <Link
+      <nav className="flex justify-between items-center w-[75%] font-bold">
+        <NavLink
           to="/origine"
-          className="hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
+          className={({ isActive }) =>
+            isActive
+              ? "underline mx-3"
+              : "hover:underline hover:translate-x-[1px] hover:translate-y-[1px] mx-3"
+          }
         >
           Origine
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/histoire"
-          className="hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
+          className={({ isActive }) =>
+            isActive
+              ? "underline mx-3"
+              : "hover:underline hover:translate-x-[1px] hover:translate-y-[1px] mx-3"
+          }
         >
           Histoire
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/lexique"
-          className="hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
+          className={({ isActive }) =>
+            isActive
+              ? "underline mx-3"
+              : "hover:underline hover:translate-x-[1px] hover:translate-y-[1px] mx-3"
+          }
         >
           Lexique
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/medias"
-          className="hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
+          className={({ isActive }) =>
+            isActive
+              ? "underline mx-3"
+              : "hover:underline hover:translate-x-[1px] hover:translate-y-[1px] mx-3"
+          }
         >
           Médias
-        </Link>
+        </NavLink>
       </nav>
 
       <ThemeSwitch />
