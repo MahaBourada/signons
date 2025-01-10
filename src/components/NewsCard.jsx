@@ -21,7 +21,7 @@ const NewsCard = ({ label, category, date, img, link }) => {
         </div>
       </div>
 
-      <img src={img} width={325} alt={label} className="p-1 my-5 mx-1" />
+      <img src={img} width={325} alt={label} className="p-1 my-5 mx-1 rounded-3xl" />
     </a>
   );
 };

@@ -1,0 +1,14 @@
+{
+  "title": "Lexique de la Langue des Signes Française (LSF)",
+  "desc": "Cette section est dédiée à l'apprentissage des bases essentielles de la LSF. Que vous soyez débutant ou que vous souhaitiez approfondir vos connaissances, vous y trouverez des ressources clés pour explorer cette langue visuelle et riche de sens.",
+  "lexique": [
+    {
+      "title": "Alphabet",
+      "desc": "Découvrez comment signer chaque lettre de l'alphabet et apprenez à épeler des mots ou des noms."
+    },
+    {
+      "title": "Vocabulaire",
+      "desc": "Familiarisez-vous avec des mots et expressions courants pour communiquer efficacement dans la vie quotidienne."
+    }
+  ]
+}

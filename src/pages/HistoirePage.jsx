@@ -1,39 +1,107 @@
 import React from "react";
 import HistoireCard from "../components/HistoireCard";
 import { Link } from "react-router-dom";
+import histoireAntiquite from "../data/HistoireAntiquite.json";
+import histoireChine from "../data/HistoireChine.json";
+import histoireEtatsUnis from "../data/HistoireEtatsUnis.json";
+import histoireJapon from "../data/HistoireJapon.json";
+import { useSearch } from "../context/SearchContext";
+import HighlightSearch from "../components/HighlightSearch";
 
 const HistoirePage = () => {
+  const { searchTerm } = useSearch();
+
   return (
     <main className="flex-grow my-10 mx-24 grid grid-cols-2 place-self-center m-auto gap-y-16">
-      <Link to="/histoire/antiquite">
+      <Link
+        to={`/histoire/${histoireAntiquite.title
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, "-")}`}
+      >
         <HistoireCard
-          label="Antiquité"
-          desc="L'histoire de la communication gestuelle remonte à l'Antiquité, où les signes étaient utilisés pour pallier les barrières barrières barrières barrières"
-          img="/images/Antiquite.png"
+          label={
+            <HighlightSearch
+              text={histoireAntiquite.title}
+              searchTerm={searchTerm}
+            />
+          }
+          desc={
+            <HighlightSearch
+              text={histoireAntiquite.desc}
+              searchTerm={searchTerm}
+            />
+          }
+          img={histoireAntiquite.img}
         />
       </Link>
 
-      <Link to="/histoire/chine">
+      <Link
+        to={`/histoire/${histoireChine.title
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, "-")}`}
+      >
         <HistoireCard
-          label="Chine"
-          desc="Saviez-vous que la langue des signes chinoise (LSC) a des racines profondes dans l'histoire du pays ? Avec des variations régionales et ubarrières barrières barrières"
-          img="/images/Chine.png"
+          label={
+            <HighlightSearch
+              text={histoireChine.title}
+              searchTerm={searchTerm}
+            />
+          }
+          desc={
+            <HighlightSearch
+              text={histoireChine.desc}
+              searchTerm={searchTerm}
+            />
+          }
+          img={histoireChine.img}
         />
       </Link>
 
-      <Link to="/histoire/etats-unis">
+      <Link
+        to={`/histoire/${histoireEtatsUnis.title
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, "-")}`}
+      >
         <HistoireCard
-          label="Etats-Unis"
-          desc="La langue des signes américaine (ASL) est aujourd'hui l'une des langues des signes les plus reconnues au monde. Ellebarrières barrières barrières"
-          img="/images/EtatsUnis.png"
+          label={
+            <HighlightSearch
+              text={histoireEtatsUnis.title}
+              searchTerm={searchTerm}
+            />
+          }
+          desc={
+            <HighlightSearch
+              text={histoireEtatsUnis.desc}
+              searchTerm={searchTerm}
+            />
+          }
+          img={histoireEtatsUnis.img}
         />
       </Link>
 
-      <Link to="/histoire/japon">
+      <Link
+        to={`/histoire/${histoireChine.title
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, "-")}`}
+      >
         <HistoireCard
-          label="Japon"
-          desc="Au Japon, la langue des signes japonaise (JSL) est plus qu'un moyen de communication : elle reflète l'harmonie entre trbarrières barrières barrières"
-          img="/images/Japon.png"
+          label={
+            <HighlightSearch
+              text={histoireJapon.title}
+              searchTerm={searchTerm}
+            />
+          }
+          desc={
+            <HighlightSearch
+              text={histoireJapon.desc}
+              searchTerm={searchTerm}
+            />
+          }
+          img={histoireJapon.img}
         />
       </Link>
     </main>

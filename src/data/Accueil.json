@@ -1,0 +1,48 @@
+{
+  "title": "Une langue pour tous !",
+  "subtitle": "Un espace dédié à la découverte, l'apprentissage, et la célébration des langues des signes.",
+  "sections": [
+    {
+      "title": "L'histoire et l'évolution de la LSF : ",
+      "desc": "Son origine, ses figures emblématiques, et son impact culturel."
+    },
+    {
+      "title": "Les langues des signes dans le monde : ",
+      "desc": "Comparaisons avec d'autres langues des signes et leurs contextes culturels."
+    },
+    {
+      "title": "Les bases de la Langue des Signes Française (LSF) : ",
+      "desc": "Alphabet, chiffres et vocabulaire du quotidien."
+    },
+    {
+      "title": "Les ressources pédagogiques : ",
+      "desc": "Vidéos, livres, et outils pour approfondir vos connaissances."
+    }
+  ],
+  "news": {
+    "title": "Actualités de la semaine",
+    "news": [
+      {
+        "title": "Cyclone Chido à Mayotte : journée de deuil national",
+        "category": "Société & Politique",
+        "date": "23/12/2024",
+        "link": "https://www.media-pi.fr/Article/Le-monde-en-LSF/Societe-et-Politique/Cyclone-Chido-a-Mayotte-journee-de-deuil-national/4046",
+        "img": "https://www.media-pi.fr/_MPI_V3_media_NE_PAS_TOUCHER/Articles/big_article_id_4046_lsf_thumbnail_01c_-_Actu_-_VIGNETTE_YT2-1_1734947633.jpeg"
+      },
+      {
+        "title": "Le récap de la semaine - Samedi 21 décembre 2024",
+        "category": "Récap",
+        "date": "21/12/2024",
+        "link": "https://www.media-pi.fr/Article/Editions-speciales/Recap/Le-recap-de-la-semaine-Samedi-21-decembre-2024/4045",
+        "img": "https://www.media-pi.fr/_MPI_V3_media_NE_PAS_TOUCHER/Articles/big_article_id_4045_lsf_thumbnail_recap_1734702477.jpg"
+      },
+      {
+        "title": "Méga-bassines : suspension judiciaire pour protéger la biodiversité",
+        "category": "Planète",
+        "date": "19/12/2024",
+        "link": "https://www.media-pi.fr/Article/Le-monde-en-LSF/Planete/Mega-bassines-suspension-judiciaire-pour-proteger-la-biodiversite/4042",
+        "img": "https://www.media-pi.fr/_MPI_V3_media_NE_PAS_TOUCHER/Articles/big_article_id_4042_lsf_thumbnail_bassine_1734607877.jpg"
+      }
+    ]
+  }
+}

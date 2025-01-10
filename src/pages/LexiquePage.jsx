@@ -1,36 +1,68 @@
 import React from "react";
 import LexiqueCard from "../components/LexiqueCard";
 import { Link } from "react-router-dom";
+import lexique from "../data/Lexique.json";
+import HighlightSearch from "../components/HighlightSearch";
+import { useSearch } from "../context/SearchContext";
 
 const LexiquePage = () => {
+  const { searchTerm } = useSearch();
+
   return (
     <main className="flex-grow mx-24">
       <div className="w-3/4 mb-6">
         <h1 className="text-dynamic-2xl font-bold">
-          Lexique de la Langue des Signes Française (LSF)
+          <HighlightSearch text={lexique.title} searchTerm={searchTerm} />
         </h1>
         <p className="text-dynamic-base leading-9 text-justify ml-3 mr-1 my-1">
-          Cette section est dédiée à l'apprentissage des bases essentielles de
-          la LSF. Que vous soyez débutant ou que vous souhaitiez approfondir vos
-          connaissances, vous y trouverez des ressources clés pour explorer
-          cette langue visuelle et riche de sens.
+          <HighlightSearch text={lexique.desc} searchTerm={searchTerm} />
         </p>
       </div>
 
       <div className="flex flex-row items-center justify-around my-14 ml-14">
-        <Link to="/lexique/alphabet">
+        <Link
+          to={`/lexique/${lexique.lexique[0].title
+            .toLowerCase()
+            .trim()
+            .replace(/\s+/g, "-")}`}
+        >
           <LexiqueCard
-            label="Alphabet"
-            desc="Découvrez comment signer chaque lettre de l'alphabet et apprenez à épeler des mots ou des noms."
+            label={
+              <HighlightSearch
+                text={lexique.lexique[0].title}
+                searchTerm={searchTerm}
+              />
+            }
+            desc={
+              <HighlightSearch
+                text={lexique.lexique[0].desc}
+                searchTerm={searchTerm}
+              />
+            }
             bgClass="bg-alphabetLight dark:bg-alphabetDark"
             img="/vectors/AlphabetPic.svg"
           />
         </Link>
 
-        <Link to="/lexique/vocabulaire">
+        <Link
+          to={`/lexique/${lexique.lexique[1].title
+            .toLowerCase()
+            .trim()
+            .replace(/\s+/g, "-")}`}
+        >
           <LexiqueCard
-            label="Vocabulaire"
-            desc="Familiarisez-vous avec des mots et expressions courants pour communiquer efficacement dans la vie quotidienne."
+            label={
+              <HighlightSearch
+                text={lexique.lexique[1].title}
+                searchTerm={searchTerm}
+              />
+            }
+            desc={
+              <HighlightSearch
+                text={lexique.lexique[1].desc}
+                searchTerm={searchTerm}
+              />
+            }
             bgClass="bg-vocabulaireLight dark:bg-vocabulaireDark"
             img="/vectors/VocabulairePic.svg"
           />
