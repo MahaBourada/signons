@@ -9,9 +9,10 @@ import MissingPage from "./pages/MissingPage";
 import { SearchProvider } from "./context/SearchContext";
 
 function App() {
+  const baseUrl = import.meta.env.VITE_APP_BASE_URL;
   return (
     <SearchProvider>
-      <Router>
+      <Router basename={baseUrl}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />

@@ -2,19 +2,20 @@ import React from "react";
 import SearchBar from "./SearchBar";
 import { Link, NavLink } from "react-router-dom";
 import ThemeSwitch from "./ThemeSwitch.jsx";
+import { resolvePath } from "../utils/utils.js";
 
 const Header = () => {
   return (
     <header className="flex items-center p-1 m-2 mx-5">
       <Link to="/" className="p-1 pb-6">
         <img
-          src={"/vectors/Logo.svg"}
+          src={resolvePath("/vectors/Logo.svg")}
           width={500}
           alt="Logo Signons"
           className="dark:hidden w-[34rem]"
         />
         <img
-          src={"/vectors/LogoDark.svg"}
+          src={resolvePath("/vectors/LogoDark.svg")}
           width={500}
           alt="Logo Signons"
           className="hidden dark:block w-[34rem]"

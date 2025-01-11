@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import lexique from "../data/Lexique.json";
 import HighlightSearch from "../components/HighlightSearch";
 import { useSearch } from "../context/SearchContext";
+import { resolvePath } from "../utils/utils";
 
 const LexiquePage = () => {
   const { searchTerm } = useSearch();
@@ -40,7 +41,7 @@ const LexiquePage = () => {
               />
             }
             bgClass="bg-alphabetLight dark:bg-alphabetDark"
-            img="/vectors/AlphabetPic.svg"
+            img={resolvePath("/vectors/AlphabetPic.svg")}
           />
         </Link>
 
@@ -64,7 +65,7 @@ const LexiquePage = () => {
               />
             }
             bgClass="bg-vocabulaireLight dark:bg-vocabulaireDark"
-            img="/vectors/VocabulairePic.svg"
+            img={resolvePath("/vectors/VocabulairePic.svg")}
           />
         </Link>
       </div>

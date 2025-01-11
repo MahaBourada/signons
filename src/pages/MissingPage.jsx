@@ -1,4 +1,5 @@
 import React from "react";
+import { resolvePath } from "../utils/utils";
 
 const MissingPage = () => {
   return (
@@ -7,13 +8,13 @@ const MissingPage = () => {
         Erreur 404 : La page a pris la fuite...
       </h1>
       <img
-        src="/vectors/404.svg"
+        src={resolvePath("/vectors/404.svg")}
         width={600}
         alt="Page introuvable"
         className="p-3 m-auto dark:hidden"
       />
       <img
-        src="/vectors/404Dark.svg"
+        src={resolvePath("/vectors/404Dark.svg")}
         width={600}
         alt="Page introuvable"
         className="p-3 m-auto hidden dark:block"

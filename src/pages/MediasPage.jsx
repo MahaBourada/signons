@@ -3,6 +3,7 @@ import MediaItem from "../components/MediaItem";
 import medias from "../data/Medias.json";
 import { useSearch } from "../context/SearchContext";
 import HighlightSearch from "../components/HighlightSearch";
+import { resolvePath } from "../utils/utils";
 
 const MediasPage = () => {
   const { searchTerm } = useSearch();
@@ -30,7 +31,11 @@ const MediasPage = () => {
         </ul>
       </div>
 
-      <img src="/vectors/MediasPic.svg" width={450} alt="Un mec chill" />
+      <img
+        src={resolvePath("/vectors/MediasPic.svg")}
+        width={450}
+        alt="Un mec chill"
+      />
     </main>
   );
 };

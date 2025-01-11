@@ -2,6 +2,7 @@ import React from "react";
 import origine from "../data/Origine.json";
 import { useSearch } from "../context/SearchContext";
 import HighlightSearch from "../components/HighlightSearch";
+import { resolvePath } from "../utils/utils";
 
 const OriginePage = () => {
   const { searchTerm } = useSearch();
@@ -27,13 +28,13 @@ const OriginePage = () => {
 
           <div className="relative flex flex-col items-end">
             <img
-              src="/images/INJS.png"
+              src={resolvePath("/images/INJS.png")}
               width={650}
               alt="Institut National des Jeunes Sourds, Paris en 'année'"
               className="p-2 m-2 dark:hidden"
             />
             <img
-              src="/images/INJSDark.png"
+              src={resolvePath("/images/INJSDark.png")}
               width={650}
               alt="Institut National des Jeunes Sourds, Paris en 'année'"
               className="p-2 m-2 hidden dark:block"
@@ -51,13 +52,13 @@ const OriginePage = () => {
 
         <div className="relative mt-20 flex flex-col items-center">
           <img
-            src="/images/AbbeEpee.png"
+            src={resolvePath("/images/AbbeEpee.png")}
             width={390}
             alt="Abbée de l'Epée"
             className="p-1 dark:hidden"
           />
           <img
-            src="/images/AbbeEpeeDark.png"
+            src={resolvePath("/images/AbbeEpeeDark.png")}
             width={390}
             alt="Abbée de l'Epée"
             className="p-1 hidden dark:block"
@@ -108,13 +109,13 @@ const OriginePage = () => {
 
         <div className="relative mt-20 flex flex-col items-center">
           <img
-            src="/images/NotreDame.png"
+            src={resolvePath("/images/NotreDame.png")}
             width={400}
             alt="Notre de Dame de Paris en 'année'"
             className="p-2 m-2 mt-10 dark:hidden"
           />
           <img
-            src="/images/NotreDameDark.png"
+            src={resolvePath("/images/NotreDameDark.png")}
             width={400}
             alt="Notre de Dame de Paris en 'année'"
             className="p-2 m-2 mt-10 hidden dark:block"
@@ -133,13 +134,13 @@ const OriginePage = () => {
       <div className="flex flex-row items-end">
         <div className="relative flex flex-col items-center">
           <img
-            src="/images/ReveilSourd.png"
+            src={resolvePath("/images/ReveilSourd.png")}
             width={500}
             alt="Pièce théâtrales LSF"
             className="p-2 m-2 dark:hidden"
           />
           <img
-            src="/images/ReveilSourdDark.png"
+            src={resolvePath("/images/ReveilSourdDark.png")}
             width={500}
             alt="Pièce théâtrales LSF"
             className="p-2 m-2 hidden dark:block"
