@@ -28,13 +28,13 @@ const OriginePage = () => {
 
           <div className="relative flex flex-col items-end">
             <img
-              src={resolvePath("/images/INJS.png")}
+              src={"/images/INJS.png"}
               width={650}
               alt="Institut National des Jeunes Sourds, Paris en 'année'"
               className="p-2 m-2 dark:hidden"
             />
             <img
-              src={resolvePath("/images/INJSDark.png")}
+              src={"/images/INJSDark.png"}
               width={650}
               alt="Institut National des Jeunes Sourds, Paris en 'année'"
               className="p-2 m-2 hidden dark:block"
@@ -52,13 +52,13 @@ const OriginePage = () => {
 
         <div className="relative mt-20 flex flex-col items-center">
           <img
-            src={resolvePath("/images/AbbeEpee.png")}
+            src={"/images/AbbeEpee.png"}
             width={390}
             alt="Abbée de l'Epée"
             className="p-1 dark:hidden"
           />
           <img
-            src={resolvePath("/images/AbbeEpeeDark.png")}
+            src={"/images/AbbeEpeeDark.png"}
             width={390}
             alt="Abbée de l'Epée"
             className="p-1 hidden dark:block"
@@ -109,13 +109,13 @@ const OriginePage = () => {
 
         <div className="relative mt-20 flex flex-col items-center">
           <img
-            src={resolvePath("/images/NotreDame.png")}
+            src={"/images/NotreDame.png"}
             width={400}
             alt="Notre de Dame de Paris en 'année'"
             className="p-2 m-2 mt-10 dark:hidden"
           />
           <img
-            src={resolvePath("/images/NotreDameDark.png")}
+            src={"/images/NotreDameDark.png"}
             width={400}
             alt="Notre de Dame de Paris en 'année'"
             className="p-2 m-2 mt-10 hidden dark:block"
@@ -134,13 +134,13 @@ const OriginePage = () => {
       <div className="flex flex-row items-end">
         <div className="relative flex flex-col items-center">
           <img
-            src={resolvePath("/images/ReveilSourd.png")}
+            src={"/images/ReveilSourd.png"}
             width={500}
             alt="Pièce théâtrales LSF"
             className="p-2 m-2 dark:hidden"
           />
           <img
-            src={resolvePath("/images/ReveilSourdDark.png")}
+            src={"/images/ReveilSourdDark.png"}
             width={500}
             alt="Pièce théâtrales LSF"
             className="p-2 m-2 hidden dark:block"

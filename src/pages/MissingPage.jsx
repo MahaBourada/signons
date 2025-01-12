@@ -8,13 +8,13 @@ const MissingPage = () => {
         Erreur 404 : La page a pris la fuite...
       </h1>
       <img
-        src={resolvePath("/vectors/404.svg")}
+        src="/vectors/404.svg"
         width={600}
         alt="Page introuvable"
         className="p-3 m-auto dark:hidden"
       />
       <img
-        src={resolvePath("/vectors/404Dark.svg")}
+        src="/vectors/404Dark.svg"
         width={600}
         alt="Page introuvable"
         className="p-3 m-auto hidden dark:block"

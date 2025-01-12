@@ -5,11 +5,14 @@ const HighlightSearch = ({ text, searchTerm }) => {
 
   // Escape any special characters in the searchTerm for safe use in a regex
   const escapeRegExp = (str) => {
-    return str.replace(/[.*+?^=!:${}()|\[\]\/\\]/g, "\\$&");
+    return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   };
 
   // Create a regex pattern to match whole words (case insensitive)
-  const regex = new RegExp(`\\b(${escapeRegExp(searchTerm)})\\b`, "gi");
+  const regex = new RegExp(
+    `(${escapeRegExp(searchTerm)})`, // Escaped search term
+    "gi" // Global and case-insensitive flags
+  );
 
   // Split the text into parts (some parts will match the searchTerm)
   const parts = text.split(regex);

@@ -4,12 +4,26 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        // => @media (min-width: 320px) { ... }
+        xsm: "320px" /* Extra small devices: mobile */,
+        bty: "425px",
+        sm: "480px" /* Small devices: mobile */,
+        msm: "580px" /* Small devices: mobile */,
+        smd: "665px" /* Small devices: mobile */,
+        md: "768px" /* Tablets */,
+        lg: "992px" /* Laptop */,
+        xl: "1200px" /* Desktop */,
+        xxl: "1400px",
+        "2xl": "1536px" /* Extra large devices: TV */,
+      },
       fontSize: {
-        'dynamic-sm': 'calc(var(--font-base, 1.25rem) / 1.2)',
-        'dynamic-base': 'var(--font-base, 1.25rem)',
-        'dynamic-lg': 'calc(var(--font-base, 1.25rem) * 1.2)',
-        'dynamic-xl': 'calc(var(--font-base, 1.25rem) * 1.5)',
-        'dynamic-2xl': 'calc(var(--font-base, 1.25rem) * 1.75)',
+        "dynamic-xsm": "calc(var(--font-base, 1.25rem) / 1.4)",
+        "dynamic-sm": "calc(var(--font-base, 1.25rem) / 1.2)",
+        "dynamic-base": "var(--font-base, 1.25rem)",
+        "dynamic-lg": "calc(var(--font-base, 1.25rem) * 1.2)",
+        "dynamic-xl": "calc(var(--font-base, 1.25rem) * 1.5)",
+        "dynamic-2xl": "calc(var(--font-base, 1.25rem) * 1.75)",
       },
       backgroundImage: {
         alphabetLight: "url('/src/assets/vectors/AlphabetShape.svg')",
@@ -37,7 +51,7 @@ export default {
       },
       gridTemplateCols: {
         custom: "repeat(3, minmax(0, 200px))", // Custom template for rows
-      }
+      },
     },
   },
   plugins: [],

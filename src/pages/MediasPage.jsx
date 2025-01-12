@@ -32,7 +32,7 @@ const MediasPage = () => {
       </div>
 
       <img
-        src={resolvePath("/vectors/MediasPic.svg")}
+        src="/vectors/MediasPic.svg"
         width={450}
         alt="Un mec chill"
       />
