@@ -4,15 +4,14 @@ import { Link } from "react-router-dom";
 import lexique from "../data/Lexique.json";
 import HighlightSearch from "../components/HighlightSearch";
 import { useSearch } from "../context/SearchContext";
-import { resolvePath } from "../utils/utils";
 
 const LexiquePage = () => {
   const { searchTerm } = useSearch();
 
   return (
-    <main className="flex-grow mx-24">
-      <div className="w-3/4 mb-6">
-        <h1 className="text-dynamic-2xl font-bold">
+    <main className="flex-grow mx-24 max-md:mx-6 max-lg:mx-16">
+      <div className="w-3/4 mb-6 max-lg:w-full">
+        <h1 className="text-dynamic-2xl font-bold max-lg:text-dynamic-xl max-lg:leading-normal">
           <HighlightSearch text={lexique.title} searchTerm={searchTerm} />
         </h1>
         <p className="text-dynamic-base leading-9 text-justify ml-3 mr-1 my-1">
@@ -20,7 +19,7 @@ const LexiquePage = () => {
         </p>
       </div>
 
-      <div className="flex flex-row items-center justify-around my-14 ml-14">
+      <div className="flex flex-row max-lg:flex-col max-lg:gap-y-10 items-center justify-around my-14 ml-14 max-lg:ml-0">
         <Link
           to={`/lexique/${lexique.lexique[0].title
             .toLowerCase()
@@ -36,7 +35,11 @@ const LexiquePage = () => {
             }
             desc={
               <HighlightSearch
-                text={lexique.lexique[0].desc}
+                text={
+                  lexique.lexique[0].desc.length > 200
+                    ? lexique.lexique[0].desc.slice(0, 200) + "..."
+                    : lexique.lexique[0].desc
+                }
                 searchTerm={searchTerm}
               />
             }
