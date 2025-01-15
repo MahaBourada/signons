@@ -3,24 +3,27 @@ import MediaItem from "../components/MediaItem";
 import medias from "../data/Medias.json";
 import { useSearch } from "../context/SearchContext";
 import HighlightSearch from "../components/HighlightSearch";
-import { resolvePath } from "../utils/utils";
 
 const MediasPage = () => {
   const { searchTerm } = useSearch();
 
   return (
-    <main className="flex-grow flex items- my-6 mx-24">
-      <div className="w-3/4 mr-10">
-        <div className="mb-6">
-          <h1 className="text-dynamic-2xl font-bold">
-            <HighlightSearch text={medias.title} searchTerm={searchTerm} />
-          </h1>
-          <p className="text-dynamic-base leading-9 text-justify ml-3 mr-1 my-1">
-            <HighlightSearch text={medias.desc} searchTerm={searchTerm} />
-          </p>
+    <main className="flex-grow my-6 mx-24 max-md:mx-6 max-lg:mx-16">
+      <div className="w-full mr-10">
+        <div className="flex flex-row justify-between w-full max-lg:flex-col max-lg:items-center">
+          <div className="mb-6 w-1/2 max-lg:w-full">
+            <h1 className="text-dynamic-2xl font-bold max-md:text-dynamic-xl max-md:leading-normal">
+              <HighlightSearch text={medias.title} searchTerm={searchTerm} />
+            </h1>
+            <p className="text-dynamic-base leading-9 text-justify ml-3 mr-1 my-1">
+              <HighlightSearch text={medias.desc} searchTerm={searchTerm} />
+            </p>
+          </div>
+
+          <img src="/vectors/MediasPic.svg" width={450} alt="Un mec chill" />
         </div>
 
-        <ul className="m-4 mx-10 mt-6 grid grid-cols-[0fr,0fr,0fr] justify-items-center justify-self-start">
+        <ul className="m-4 mx-10 max-lg:mx-0 mt-6 grid grid-cols-[1fr,1fr,1fr] max-msm:grid-cols-[1fr] max-md:grid-cols-[1fr,1fr] justify-items-center justify-self-start max-lg:justify-self-center">
           {medias.links.map((link) => (
             <MediaItem
               key={link}
@@ -30,12 +33,6 @@ const MediasPage = () => {
           ))}
         </ul>
       </div>
-
-      <img
-        src="/vectors/MediasPic.svg"
-        width={450}
-        alt="Un mec chill"
-      />
     </main>
   );
 };
