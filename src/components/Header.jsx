@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex flex-row items-center p-1 m-2 mx-5 z-50">
+    <header className="flex flex-row items-center p-1 m-2 mx-5 z-50 max-md:mx-3">
       <div className=" max-md:flex flex-col items-center hidden w-full">
         <div className="hidden max-md:flex flex-row items-center w-full justify-between">
           <Link to="/" className="p-1 max-md:block hidden">

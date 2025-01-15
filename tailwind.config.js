@@ -7,6 +7,7 @@ export default {
       screens: {
         // => @media (min-width: 320px) { ... }
         xsm: "320px" /* Extra small devices: mobile */,
+        source: "329px",
         bty: "425px",
         sm: "480px" /* Small devices: mobile */,
         msm: "580px" /* Small devices: mobile */,

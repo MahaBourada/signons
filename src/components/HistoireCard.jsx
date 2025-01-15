@@ -11,12 +11,7 @@ const HistoireCard = ({ label, desc, img }) => {
           {truncatedDesc}
         </p>
       </div>
-      <img
-        src={img}
-        width={225}
-        alt={img}
-        className="p-4 m-1"
-      />
+      <img src={img} width={225} alt={img} className="p-4 m-1 max-md:hidden" />
     </div>
   );
 };

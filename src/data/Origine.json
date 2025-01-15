@@ -20,9 +20,21 @@
     "desc": "De nos jours, la LSF est enseignée dans de nombreuses écoles, universités et centres de formation. Elle est également valorisée dans la culture populaire à travers des films, des séries et des événements artistiques mettant en avant la richesse de la langue et de la culture sourde. Cependant, des défis subsistent, notamment pour garantir l'accès à des interprètes en LSF dans tous les domaines de la vie publique et pour renforcer son enseignement dès le plus jeune âge. L'impact de la LSF va au-delà des frontières françaises. Sa structure a inspiré le développement d'autres langues des signes à travers le monde, comme l'American Sign Language (ASL), qui partage des racines avec la LSF. La reconnaissance des langues des signes au niveau mondial continue d'évoluer, avec des efforts pour leur inclusion dans les politiques éducatives et sociales."
   },
   "bibliographie": {
-    "1": "https://adsignes.fr/histoire-langue-des-signes",
-    "2": "https://www.surdi.info/langue-des-signes-francaise-lsflangue-des-signes-siecles-histoire",
-    "3": "https://des-mains-et-des-signes.fr/la-lsf",
-    "4": "https://fr.wikipedia.org/wiki/Langue_des_signes_fran%C3%A7aise"
+    "1": {
+      "lien": "https://adsignes.fr/histoire-langue-des-signes",
+      "nom": "L'histoire de la langue des signes françaises (LSF)"
+    },
+    "2": {
+      "lien": "https://adsignes.fr/histoire-langue-des-signes",
+      "nom": "L'histoire de la langue des signes françaises (LSF)"
+    },
+    "3": {
+      "lien": "https://des-mains-et-des-signes.fr/la-lsf",
+      "nom": "Des mains et des signes"
+    },
+    "4": {
+      "lien": "https://fr.wikipedia.org/wiki/Langue_des_signes_fran%C3%A7aise",
+      "nom": "Wikipédia - Langue des signes française"
+    }
   }
 }
