@@ -12,7 +12,7 @@ const HistoirePage = () => {
   const { searchTerm } = useSearch();
 
   return (
-    <main className="flex-grow my-10 mx-24 grid grid-cols-2 max-md:flex max-md:flex-col place-self-center m-auto gap-y-16">
+    <main className="flex-grow my-10 mx-24 max-lg:mx-2 grid grid-cols-2 max-lg:gap-x-0 max-xl:gap-x-10 max-lg:flex max-lg:flex-col place-self-center m-auto gap-y-16">
       <Link
         to={`/histoire/${histoireAntiquite.title
           .toLowerCase()
