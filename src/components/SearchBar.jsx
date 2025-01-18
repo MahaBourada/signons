@@ -26,7 +26,7 @@ const SearchBar = () => {
         aria-label="Rechercher dans la page"
         id="searchInput"
         type="text"
-        className="text-dynamic-base w-[80%] max-sm:w-fit max-xl:w-[50%] h-14 rounded-full px-7 py-5 shadow-custom-box text-blackText focus:outline-none placeholder-searchText bg-bgColor dark:bg-searchBg"
+        className="text-dynamic-base w-[80%] max-sm:w-fit h-14 rounded-full px-7 py-5 shadow-custom-box text-blackText focus:outline-none placeholder-searchText bg-bgColor dark:bg-searchBg"
         placeholder="Rechercher"
         onChange={handleSearchChange}
       />
