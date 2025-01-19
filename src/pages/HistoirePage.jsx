@@ -12,14 +12,17 @@ const HistoirePage = () => {
   const { searchTerm } = useSearch();
 
   return (
-    <main className="flex-grow mx-24">
+    <main
+      aria-live="polite"
+      className="flex-grow mx-24 max-md:mx-6 max-lg:mx-16"
+    >
       <h1 className="font-mainFont text-dynamic-2xl font-bold max-lg:text-dynamic-xl max-lg:leading-normal mb-10">
         <HighlightSearch
           text="Histoire des langues des signes à travers le monde"
           searchTerm={searchTerm}
         />
       </h1>
-      <div className="grid grid-cols-2 max-lg:gap-x-0 max-xl:gap-x-10 max-lg:flex max-lg:flex-col place-self-center m-auto gap-y-16 max-lg:mx-2 ">
+      <div className="grid grid-cols-2 max-lg:gap-x-0 max-xl:gap-x-10 max-lg:flex max-lg:flex-col place-self-center m-auto gap-y-16 max-lg:mx-2">
         <Link
           to={`/histoire/${histoireAntiquite.title
             .toLowerCase()
@@ -66,7 +69,7 @@ const HistoirePage = () => {
                 searchTerm={searchTerm}
               />
             }
-            img={histoireChine.img}
+            img={import.meta.env.VITE_APP_BASE_URL + histoireChine.img}
           />
         </Link>
 
@@ -91,7 +94,7 @@ const HistoirePage = () => {
                 searchTerm={searchTerm}
               />
             }
-            img={histoireEtatsUnis.img}
+            img={import.meta.env.VITE_APP_BASE_URL + histoireEtatsUnis.img}
           />
         </Link>
 
@@ -116,7 +119,7 @@ const HistoirePage = () => {
                 searchTerm={searchTerm}
               />
             }
-            img={histoireJapon.img}
+            img={import.meta.env.VITE_APP_BASE_URL + histoireJapon.img}
           />
         </Link>
       </div>

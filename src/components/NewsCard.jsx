@@ -11,7 +11,7 @@ const NewsCard = ({ label, altText, category, date, img, link }) => {
       aria-label={`Visiter le lien externe pour ${altText}`}
       className="flex items-start hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
     >
-      <div className="text-justify w-full ml-1 mr-5 my-7 leading-normal">
+      <div className="w-full ml-1 mr-5 my-7 leading-normal">
         <h3 className="text-dynamic-base font-bold line-clamp-3 max-md:line-clamp-2">
           {truncatedLabel}
         </h3>
@@ -26,7 +26,7 @@ const NewsCard = ({ label, altText, category, date, img, link }) => {
       <img
         src={img}
         width={325}
-        alt={label}
+        alt={altText}
         className="p-1 my-5 mx-1 rounded-3xl max-sm:hidden max-md:w-[15.5rem] max-md:block max-lg:hidden max-xl:w-[15.5rem]"
       />
     </a>

@@ -86,30 +86,28 @@ const Header = () => {
       </div>
 
       <div className="max-md:hidden flex flex-row items-center max-header:items-start justify-between w-full">
-        {/* <div className="flex flex-row items-stretch justify-between w-full bg-red-300"> */}
-          <Link to="/" className="p-1 max-md:hidden">
-            <img
-              src={"/signons/vectors/Logo.svg"}
-              width={500}
-              alt="Signons - Aller à la page d'accueil"
-              className="dark:hidden w-[14rem] max-header:w-52"
-            />
-            <img
-              src={"/signons/vectors/LogoDark.svg"}
-              width={500}
-              alt="Signons - Aller à la page d'accueil"
-              className="hidden dark:block w-[14rem] max-header:w-52"
-            />
-          </Link>
+        <Link to="/" className="p-1 max-md:hidden">
+          <img
+            src={"/signons/vectors/Logo.svg"}
+            width={500}
+            alt="Signons - Aller à la page d'accueil"
+            className="dark:hidden w-[14rem] max-header:w-52"
+          />
+          <img
+            src={"/signons/vectors/LogoDark.svg"}
+            width={500}
+            alt="Signons - Aller à la page d'accueil"
+            className="hidden dark:block w-[14rem] max-header:w-52"
+          />
+        </Link>
 
-          <div className="flex-grow mt-6 flex flex-col items-end">
-            <NavBar />
+        <div className="flex-grow mt-6 flex flex-col items-end">
+          <NavBar />
 
-            <div className="max-header:block hidden mr-14 flex-grow">
-              <SearchBar />
-            </div>
+          <div className="max-header:block hidden mr-14 flex-grow">
+            <SearchBar />
           </div>
-        {/* </div> */}
+        </div>
       </div>
     </header>
   );

@@ -5,7 +5,6 @@ export default {
   theme: {
     extend: {
       screens: {
-        // => @media (min-width: 320px) { ... }
         xsm: "320px" /* Extra small devices: mobile */,
         source: "329px",
         lexique: "415px",
@@ -51,7 +50,7 @@ export default {
       },
       fontFamily: {
         mainFont: "'Kodchasan', 'sans-serif'",
-        bodyFont: "'Atkinson Hyperlegible', 'sans-serif'"
+        bodyFont: "'Atkinson Hyperlegible', 'sans-serif'",
       },
       boxShadow: {
         "custom-box": "2px 2px 3px 1px rgb(0 0 0 / 25%)",

@@ -8,7 +8,10 @@ const OriginePage = () => {
   const { searchTerm } = useSearch();
 
   return (
-    <main className="flex-grow mx-24 w-fit max-md:mx-4 max-lg:mx-16">
+    <main
+      aria-live="polite"
+      className="flex-grow mx-24 w-fit max-md:mx-4 max-lg:mx-16"
+    >
       <h1 className="font-mainFont text-dynamic-2xl font-bold max-lg:text-dynamic-xl max-lg:leading-normal">
         <HighlightSearch
           text="Origine de la langue des signes française"
@@ -25,7 +28,7 @@ const OriginePage = () => {
                 searchTerm={searchTerm}
               />
             </h2>
-            <p className="text-justify mx-5 max-lg:mx-3">
+            <p className="mx-5 max-lg:mx-3">
               <HighlightSearch
                 text={origine.commencement.desc}
                 searchTerm={searchTerm}
@@ -35,13 +38,13 @@ const OriginePage = () => {
 
           <div className="relative flex flex-col items-end max-xl:hidden">
             <img
-              src={"/signons/images/INJS.png"}
+              src={import.meta.env.VITE_APP_BASE_URL + "images/INJS.png"}
               width={650}
               alt="Institut National des Jeunes Sourds, Paris 1870"
               className="p-2 m-2 dark:hidden"
             />
             <img
-              src={"/signons/images/INJSDark.png"}
+              src={import.meta.env.VITE_APP_BASE_URL + "images/INJSDark.png"}
               width={650}
               alt="Institut National des Jeunes Sourds, Paris 1870"
               className="p-2 m-2 hidden dark:block"
@@ -71,13 +74,13 @@ const OriginePage = () => {
 
         <div className="relative mt-20 flex flex-col items-center max-xl:my-5 max-xl:m-auto">
           <img
-            src={"/signons/images/AbbeEpee.png"}
+            src={import.meta.env.VITE_APP_BASE_URL + "images/AbbeEpee.png"}
             width={390}
             alt="Portrait de l'Abbé de l'Épée, fondateur de l'éducation pour les sourds."
             className="p-1 dark:hidden max-lg:w-3/4 max-xl:w-full"
           />
           <img
-            src={"/signons/images/AbbeEpeeDark.png"}
+            src={import.meta.env.VITE_APP_BASE_URL + "images/AbbeEpeeDark.png"}
             width={390}
             alt="Portrait de l'Abbé de l'Épée, fondateur de l'éducation pour les sourds."
             className="p-1 hidden dark:block max-lg:w-3/4 max-xl:w-full"
@@ -114,7 +117,7 @@ const OriginePage = () => {
                 searchTerm={searchTerm}
               />
             </h2>
-            <p className="text-justify mx-5 max-lg:mx-3">
+            <p className="mx-5 max-lg:mx-3">
               <HighlightSearch
                 text={origine.obstacle.desc}
                 searchTerm={searchTerm}
@@ -129,7 +132,7 @@ const OriginePage = () => {
                 searchTerm={searchTerm}
               />
             </h2>
-            <p className="text-justify mx-5 max-lg:mx-3">
+            <p className="mx-5 max-lg:mx-3">
               <HighlightSearch
                 text={origine.reveil.desc}
                 searchTerm={searchTerm}
@@ -140,13 +143,13 @@ const OriginePage = () => {
 
         <div className="relative mt-20 flex flex-col items-center max-xl:my-5 max-xl:mb-9">
           <img
-            src={"/signons/images/NotreDame.png"}
+            src={import.meta.env.VITE_APP_BASE_URL + "images/NotreDame.png"}
             width={400}
             alt="Cathédrale Notre-Dame de Reims en 1870"
             className="p-2 m-2 mt-10 dark:hidden max-xl:my-0 max-xl:w-full"
           />
           <img
-            src={"/signons/images/NotreDameDark.png"}
+            src={import.meta.env.VITE_APP_BASE_URL + "images/NotreDameDark.png"}
             width={400}
             alt="Cathédrale Notre-Dame de Reims en 1870"
             className="p-2 m-2 mt-10 hidden dark:block max-xl:my-0 max-xl:w-full"
@@ -177,13 +180,13 @@ const OriginePage = () => {
       <div className="flex flex-row items-center max-xl:flex-col-reverse max-xl:items-center">
         <div className="relative flex flex-col items-center max-lg:my-4">
           <img
-            src={"/signons/images/ReveilSourd.png"}
+            src={import.meta.env.VITE_APP_BASE_URL + "images/ReveilSourd.png"}
             width={500}
             alt="Affiche de la comédie musicale en langue des signes"
             className="p-2 m-2 dark:hidden w-full"
           />
           <img
-            src={"/signons/images/ReveilSourdDark.png"}
+            src={import.meta.env.VITE_APP_BASE_URL + "images/ReveilSourdDark.png"}
             width={500}
             alt="Affiche de la comédie musicale en langue des signes"
             className="p-2 m-2 hidden dark:block w-full"
@@ -220,9 +223,7 @@ const OriginePage = () => {
               searchTerm={searchTerm}
             />
           </h2>
-          <p className="text-justify mx-5 max-lg:mx-3">
-            {origine.officialisation.desc}
-          </p>
+          <p className="mx-5 max-lg:mx-3">{origine.officialisation.desc}</p>
         </div>
       </div>
 
@@ -233,7 +234,7 @@ const OriginePage = () => {
             searchTerm={searchTerm}
           />
         </h2>
-        <p className="text-justify mx-5 max-lg:mx-3">
+        <p className="mx-5 max-lg:mx-3">
           <HighlightSearch
             text={origine.aujourdhui.desc}
             searchTerm={searchTerm}

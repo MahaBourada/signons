@@ -9,12 +9,15 @@ const LexiquePage = () => {
   const { searchTerm } = useSearch();
 
   return (
-    <main className="flex-grow mx-24 max-md:mx-6 max-lg:mx-16">
+    <main
+      aria-live="polite"
+      className="flex-grow mx-24 max-md:mx-6 max-lg:mx-16"
+    >
       <div className="w-3/4 mb-6 max-lg:w-full">
         <h1 className="font-mainFont text-dynamic-2xl font-bold max-lg:text-dynamic-xl max-lg:leading-normal">
           <HighlightSearch text={lexique.title} searchTerm={searchTerm} />
         </h1>
-        <p className="text-dynamic-base leading-9 text-justify ml-3 mr-1 my-1">
+        <p className="text-dynamic-base leading-9 ml-3 mr-1 my-1">
           <HighlightSearch text={lexique.desc} searchTerm={searchTerm} />
         </p>
       </div>
@@ -46,7 +49,7 @@ const LexiquePage = () => {
               />
             }
             bgClass="bg-alphabetLight dark:bg-alphabetDark"
-            img="/signons/vectors/AlphabetPic.svg"
+            img={import.meta.env.VITE_APP_BASE_URL + "vectors/AlphabetPic.svg"}
           />
         </Link>
 
@@ -76,7 +79,9 @@ const LexiquePage = () => {
               />
             }
             bgClass="bg-vocabulaireLight dark:bg-vocabulaireDark"
-            img="/signons/vectors/VocabulairePic.svg"
+            img={
+              import.meta.env.VITE_APP_BASE_URL + "vectors/VocabulairePic.svg"
+            }
           />
         </Link>
       </div>

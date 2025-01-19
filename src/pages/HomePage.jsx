@@ -8,21 +8,24 @@ const HomePage = () => {
   const { searchTerm } = useSearch();
 
   return (
-    <main aria-live="polite" className="flex-grow flex flex-row justify-evenly max-xl:justify-between relative max-md:flex-col">
+    <main
+      aria-live="polite"
+      className="flex-grow flex flex-row justify-evenly max-xl:justify-between relative max-md:flex-col"
+    >
       <section className='w-[40%] p-10 bg-[url("assets/vectors/AcceuilShape.svg")] dark:bg-[url("assets/vectors/AcceuilShapeDark.svg")] bg-contain bg-no-repeat max-md:w-full max-lg:w-[60%] max-xl:w-[50%] max-md:mx-0 max-xl:mx-4 max-xl:p-6'>
         <h1 className="font-mainFont font-bold text-dynamic-2xl text-center p-1 m-2 max-bty:text-dynamic-xl max-md:text-dynamic-2xl max-lg:text-dynamic-xl max-md:m-2 max-lg:m-0">
           <HighlightSearch text={accueil.title} searchTerm={searchTerm} />
         </h1>
-        <p className="text-justify">
+        <p>
           <HighlightSearch text={accueil.subtitle} searchTerm={searchTerm} />
         </p>
         <div className="ml-4 my-1 max-sm:ml-1 max-md:ml-4 max-lg:ml-0">
-          <p className="font-bold">
+          <h2 className="font-bold">
             <HighlightSearch
               text={accueil.subsubtitle}
               searchTerm={searchTerm}
             />
-          </p>
+          </h2>
           <ul className="text-justify list-disc ml-8 mr-2 max-sm:text-left max-sm:ml-6 max-md:ml-8 max-lg:ml-5">
             {accueil.sections.map((section, index) => (
               <li key={index}>
