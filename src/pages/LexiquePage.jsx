@@ -19,7 +19,7 @@ const LexiquePage = () => {
         </p>
       </div>
 
-      <div className="flex flex-row max-lg:flex-col max-lg:gap-y-10 items-center justify-around my-14 ml-14 max-lg:ml-0">
+      <div className="flex flex-row max-lg:flex-col gap-x-10 max-lg:gap-y-10 items-center justify-center my-14 ml-14 max-lg:ml-0">
         <Link
           to={`/lexique/${lexique.lexique[0].title
             .toLowerCase()

@@ -3,8 +3,8 @@ import { resolvePath } from "../utils/utils";
 
 const MissingPage = () => {
   return (
-    <main className="flex-grow flex items-start justify-center mx-auto ">
-      <h1 className="text-dynamic-xl font-bold w-96 mx-10 my-24 leading-relaxed">
+    <main className="flex-grow flex items-start justify-center max-lg:flex-col mx-auto ">
+      <h1 className="text-dynamic-xl max-md:text-dynamic-lg font-bold w-96 max-lg:w-fit mx-10 my-24 max-lg:my-6 leading-relaxed">
         Erreur 404 : La page a pris la fuite...
       </h1>
       <img
