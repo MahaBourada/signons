@@ -35,13 +35,13 @@ const OriginePage = () => {
 
           <div className="relative flex flex-col items-end max-xl:hidden">
             <img
-              src={"images/INJS.png"}
+              src={"/signons/images/INJS.png"}
               width={650}
               alt="Institut National des Jeunes Sourds, Paris 1870"
               className="p-2 m-2 dark:hidden"
             />
             <img
-              src={"images/INJSDark.png"}
+              src={"/signons/images/INJSDark.png"}
               width={650}
               alt="Institut National des Jeunes Sourds, Paris 1870"
               className="p-2 m-2 hidden dark:block"
@@ -71,13 +71,13 @@ const OriginePage = () => {
 
         <div className="relative mt-20 flex flex-col items-center max-xl:my-5 max-xl:m-auto">
           <img
-            src={"images/AbbeEpee.png"}
+            src={"/signons/images/AbbeEpee.png"}
             width={390}
             alt="Portrait de l'Abbé de l'Épée, fondateur de l'éducation pour les sourds."
             className="p-1 dark:hidden max-lg:w-3/4 max-xl:w-full"
           />
           <img
-            src={"images/AbbeEpeeDark.png"}
+            src={"/signons/images/AbbeEpeeDark.png"}
             width={390}
             alt="Portrait de l'Abbé de l'Épée, fondateur de l'éducation pour les sourds."
             className="p-1 hidden dark:block max-lg:w-3/4 max-xl:w-full"
@@ -140,13 +140,13 @@ const OriginePage = () => {
 
         <div className="relative mt-20 flex flex-col items-center max-xl:my-5 max-xl:mb-9">
           <img
-            src={"images/NotreDame.png"}
+            src={"/signons/images/NotreDame.png"}
             width={400}
             alt="Cathédrale Notre-Dame de Reims en 1870"
             className="p-2 m-2 mt-10 dark:hidden max-xl:my-0 max-xl:w-full"
           />
           <img
-            src={"images/NotreDameDark.png"}
+            src={"/signons/images/NotreDameDark.png"}
             width={400}
             alt="Cathédrale Notre-Dame de Reims en 1870"
             className="p-2 m-2 mt-10 hidden dark:block max-xl:my-0 max-xl:w-full"
@@ -177,13 +177,13 @@ const OriginePage = () => {
       <div className="flex flex-row items-center max-xl:flex-col-reverse max-xl:items-center">
         <div className="relative flex flex-col items-center max-lg:my-4">
           <img
-            src={"images/ReveilSourd.png"}
+            src={"/signons/images/ReveilSourd.png"}
             width={500}
             alt="Affiche de la comédie musicale en langue des signes"
             className="p-2 m-2 dark:hidden w-full"
           />
           <img
-            src={"images/ReveilSourdDark.png"}
+            src={"/signons/images/ReveilSourdDark.png"}
             width={500}
             alt="Affiche de la comédie musicale en langue des signes"
             className="p-2 m-2 hidden dark:block w-full"
