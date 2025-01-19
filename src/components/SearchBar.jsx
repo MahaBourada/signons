@@ -16,7 +16,7 @@ const SearchBar = () => {
 
   return (
     <form
-      className="flex items-center justify-center w-full shadow-boxShadow m-10 max-xl:m-1 max-xl:my-5"
+      className="flex-grow flex items-center justify-center shadow-boxShadow m-10 max-xl:m-1 max-xl:my-5 max-header:mr-28 max-header:w-full"
       onSubmit={handleSubmit}
     >
       <label htmlFor="searchInput" className="absolute right-[5555px]">
@@ -26,7 +26,7 @@ const SearchBar = () => {
         aria-label="Rechercher dans la page"
         id="searchInput"
         type="text"
-        className="text-dynamic-base w-[80%] max-sm:w-fit h-14 rounded-full px-7 py-5 shadow-custom-box text-blackText focus:outline-none placeholder-searchText bg-bgColor dark:bg-searchBg"
+        className="flex-grow text-dynamic-base w-[80%] max-header:w-full h-14 rounded-full px-7 py-5 shadow-custom-box text-blackText focus:outline-none placeholder-searchText bg-bgColor dark:bg-searchBg"
         placeholder="Rechercher"
         onChange={handleSearchChange}
       />

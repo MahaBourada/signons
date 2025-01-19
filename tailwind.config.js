@@ -18,7 +18,7 @@ export default {
         lexiquexl: "690px" /* Small devices: mobile */,
         md: "768px" /* Tablets */,
         lg: "992px" /* Laptop */,
-        header: "1062px",
+        header: "1090px",
         xl: "1200px" /* Desktop */,
         xxl: "1400px",
         "2xl": "1536px" /* Extra large devices: TV */,
