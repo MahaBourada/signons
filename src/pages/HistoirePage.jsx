@@ -13,7 +13,7 @@ const HistoirePage = () => {
 
   return (
     <main className="flex-grow mx-24">
-      <h1 className="text-dynamic-2xl font-bold max-lg:text-dynamic-xl max-lg:leading-normal mb-10">
+      <h1 className="font-mainFont text-dynamic-2xl font-bold max-lg:text-dynamic-xl max-lg:leading-normal mb-10">
         <HighlightSearch
           text="Histoire des langues des signes à travers le monde"
           searchTerm={searchTerm}

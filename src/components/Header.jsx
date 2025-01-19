@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex flex-row items-center p-1 m-2 mx-5 z-50 max-md:mx-3">
+    <header className="flex flex-row items-center p-1 m-2 mx-5 z-50 max-md:mx-3 font-mainFont">
       <div className="max-md:flex flex-col items-center hidden w-full">
         <div className="hidden max-md:flex flex-row items-center w-full justify-between">
           <Link to="/" className="p-1 max-md:block hidden">
@@ -42,6 +42,7 @@ const Header = () => {
             type="button"
             onClick={toggleMenu}
             className="mx-5 max-source:mx-3"
+            aria-label="Ouvrir le menu de navigation"
           >
             <Menu size={44} color="currentColor" strokeWidth={3} />
           </button>
@@ -68,7 +69,7 @@ const Header = () => {
                 <button
                   type="button"
                   onClick={toggleMenu}
-                  aria-label="Close menu"
+                  aria-label="Fermer le menu de navigation"
                   className="m-2"
                 >
                   <X size={40} color="currentColor" strokeWidth={3} />

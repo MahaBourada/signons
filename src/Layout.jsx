@@ -21,7 +21,7 @@ const Layout = () => {
 
   return (
     <div
-      className="App flex flex-col textlg min-h-screen bg-bgColor bg-big-screen bg-repeat-y font-main text-blackText text-dynamic-base leading-loose dark:text-whiteText dark:bg-darkBg font-normal max-xsm:text-dynamic-base"
+      className="App flex flex-col textlg min-h-screen bg-bgColor bg-big-screen bg-repeat-y font-bodyFont text-blackText text-dynamic-base leading-loose dark:text-whiteText dark:bg-darkBg font-normal max-xsm:text-dynamic-base"
       style={{ "--font-base": `${fontSize}rem` }}
     >
       <Header />

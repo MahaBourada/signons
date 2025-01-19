@@ -11,7 +11,7 @@ const LexiquePage = () => {
   return (
     <main className="flex-grow mx-24 max-md:mx-6 max-lg:mx-16">
       <div className="w-3/4 mb-6 max-lg:w-full">
-        <h1 className="text-dynamic-2xl font-bold max-lg:text-dynamic-xl max-lg:leading-normal">
+        <h1 className="font-mainFont text-dynamic-2xl font-bold max-lg:text-dynamic-xl max-lg:leading-normal">
           <HighlightSearch text={lexique.title} searchTerm={searchTerm} />
         </h1>
         <p className="text-dynamic-base leading-9 text-justify ml-3 mr-1 my-1">

@@ -9,7 +9,7 @@ const OriginePage = () => {
 
   return (
     <main className="flex-grow mx-24 w-fit max-md:mx-4 max-lg:mx-16">
-      <h1 className="text-dynamic-2xl font-bold max-lg:text-dynamic-xl max-lg:leading-normal">
+      <h1 className="font-mainFont text-dynamic-2xl font-bold max-lg:text-dynamic-xl max-lg:leading-normal">
         <HighlightSearch
           text="Origine de la langue des signes française"
           searchTerm={searchTerm}
@@ -19,7 +19,7 @@ const OriginePage = () => {
       <div className="flex flex-row items-start justify-between max-xl:flex-col">
         <div className="flex flex-col items-center w-3/4 max-xl:w-full">
           <div className="m-6 mb-10 w-full max-lg:m-0" aria-live="polite">
-            <h2 className="text-dynamic-xl font-bold m-1 my-1 max-lg:text-dynamic-xl max-lg:m-0 max-lg:mt-4 max-lg:mb-3 max-lg:leading-normal">
+            <h2 className="font-mainFont text-dynamic-xl font-bold m-1 my-1 max-lg:text-dynamic-xl max-lg:m-0 max-lg:mt-4 max-lg:mb-3 max-lg:leading-normal">
               <HighlightSearch
                 text={origine.commencement.title}
                 searchTerm={searchTerm}
@@ -108,7 +108,7 @@ const OriginePage = () => {
       <div className="flex flex-row items-center justify-between max-xl:flex-col max-xl:items-center">
         <div className="w-3/4 max-xl:w-full">
           <div className="m-6 mb-10 max-lg:m-0" aria-live="polite">
-            <h2 className="text-dynamic-xl font-bold m-1 my-1 max-lg:text-dynamic-xl max-lg:m-0 max-lg:mt-4 max-lg:mb-3 max-lg:leading-normal">
+            <h2 className="font-mainFont text-dynamic-xl font-bold m-1 my-1 max-lg:text-dynamic-xl max-lg:m-0 max-lg:mt-4 max-lg:mb-3 max-lg:leading-normal">
               <HighlightSearch
                 text={origine.obstacle.title}
                 searchTerm={searchTerm}
@@ -123,7 +123,7 @@ const OriginePage = () => {
           </div>
 
           <div className="m-6 mb-10 max-lg:m-0" aria-live="polite">
-            <h2 className="text-dynamic-xl font-bold m-1 my-1 max-lg:text-dynamic-xl max-lg:m-0 max-lg:mt-4 max-lg:mb-3 max-lg:leading-normal">
+            <h2 className="font-mainFont text-dynamic-xl font-bold m-1 my-1 max-lg:text-dynamic-xl max-lg:m-0 max-lg:mt-4 max-lg:mb-3 max-lg:leading-normal">
               <HighlightSearch
                 text={origine.reveil.title}
                 searchTerm={searchTerm}
@@ -214,7 +214,7 @@ const OriginePage = () => {
           className="m-6 mb-10 w-3/4 max-lg:m-0 max-xl:w-full"
           aria-live="polite"
         >
-          <h2 className="text-dynamic-xl font-bold m-1 my-1 max-lg:text-dynamic-xl max-lg:m-0 max-lg:mt-4 max-lg:mb-3 max-lg:leading-normal">
+          <h2 className="font-mainFont text-dynamic-xl font-bold m-1 my-1 max-lg:text-dynamic-xl max-lg:m-0 max-lg:mt-4 max-lg:mb-3 max-lg:leading-normal">
             <HighlightSearch
               text={origine.officialisation.title}
               searchTerm={searchTerm}
@@ -227,7 +227,7 @@ const OriginePage = () => {
       </div>
 
       <div className="m-6 mb-10 max-lg:m-0" aria-live="polite">
-        <h2 className="text-dynamic-xl font-bold m-1 my-1 max-lg:text-dynamic-xl max-lg:m-0 max-lg:mt-4 max-lg:mb-3 max-lg:leading-normal">
+        <h2 className="font-mainFont text-dynamic-xl font-bold m-1 my-1 max-lg:text-dynamic-xl max-lg:m-0 max-lg:mt-4 max-lg:mb-3 max-lg:leading-normal">
           <HighlightSearch
             text={origine.aujourdhui.title}
             searchTerm={searchTerm}
@@ -242,7 +242,7 @@ const OriginePage = () => {
       </div>
 
       <div className="m-6 mb-10 max-lg:m-0" aria-live="polite">
-        <h2 className="text-dynamic-xl font-bold m-1 my-1 max-lg:text-dynamic-xl max-lg:m-0 max-lg:mt-4 max-lg:mb-3 max-lg:leading-normal">
+        <h2 className="font-mainFont text-dynamic-xl font-bold m-1 my-1 max-lg:text-dynamic-xl max-lg:m-0 max-lg:mt-4 max-lg:mb-3 max-lg:leading-normal">
           <HighlightSearch text="Bibliographie" searchTerm={searchTerm} />
         </h2>
         <ul className="mx-10 list-disc">

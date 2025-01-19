@@ -9,9 +9,9 @@ const MediasPage = () => {
 
   return (
     <main className="flex-grow flex flex-row mx-24 max-md:mx-6 max-lg:mx-16">
-      <div className="flex flex-col w-full max-lg:flex-col max-lg:items-center">
+      <div className="flex flex-col items-start w-full max-lg:flex-col max-lg:items-center">
         <div className="mb-6 w-3/4">
-          <h1 className="text-dynamic-2xl font-bold max-md:text-dynamic-xl max-md:leading-normal">
+          <h1 className="font-mainFont text-dynamic-2xl font-bold max-md:text-dynamic-xl max-md:leading-normal">
             <HighlightSearch text={medias.title} searchTerm={searchTerm} />
           </h1>
           <p className="text-dynamic-base leading-9 text-justify ml-3 mr-1 my-1">

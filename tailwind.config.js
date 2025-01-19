@@ -50,7 +50,8 @@ export default {
         whiteText: "#E6E6E6",
       },
       fontFamily: {
-        main: "'Noto Serif', 'serif'",
+        mainFont: "'Kodchasan', 'sans-serif'",
+        bodyFont: "'Atkinson Hyperlegible', 'sans-serif'"
       },
       boxShadow: {
         "custom-box": "2px 2px 3px 1px rgb(0 0 0 / 25%)",
