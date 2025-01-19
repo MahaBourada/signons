@@ -46,7 +46,7 @@ const LexiquePage = () => {
               />
             }
             bgClass="bg-alphabetLight dark:bg-alphabetDark"
-            img="/vectors/AlphabetPic.svg"
+            img="vectors/AlphabetPic.svg"
           />
         </Link>
 
@@ -76,7 +76,7 @@ const LexiquePage = () => {
               />
             }
             bgClass="bg-vocabulaireLight dark:bg-vocabulaireDark"
-            img="/vectors/VocabulairePic.svg"
+            img="vectors/VocabulairePic.svg"
           />
         </Link>
       </div>

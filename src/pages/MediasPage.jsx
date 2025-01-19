@@ -32,7 +32,7 @@ const MediasPage = () => {
       </div>
 
       <img
-        src="/vectors/MediasPic.svg"
+        src="vectors/MediasPic.svg"
         width={450}
         alt=""
         role="presentation"
