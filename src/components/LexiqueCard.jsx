@@ -7,7 +7,7 @@ const LexiqueCard = ({ label, desc, img, bgClass }) => {
     >
       <div className="max-lexique:w-full max-lexiquem:w-3/4 max-lexiquel:w-[65%] max-lexiquexl:w-[55%] max-md:w-1/2"> 
         <h3 className="text-dynamic-xl font-bold">{label}</h3>
-        <p className="text-dynamic-base leading-9 text-justify ml-3 mr-1 max-md:mx-0">
+        <p className="text-dynamic-base leading-9 text-justify ml-3 mr-1 max-md:mx-0 max-lg:w-1/2">
           {desc}
         </p>
       </div>
