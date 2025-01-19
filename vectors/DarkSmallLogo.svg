@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 263.31 271.82">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 263.31 283.5">
   <defs>
     <style>
       .cls-1 {
@@ -13,7 +13,7 @@
       }
 
       .cls-3 {
-        font-family: LibreBaskerville-Bold, 'Libre Baskerville';
+        font-family: Kodchasan-Bold, Kodchasan;
         font-size: 47.91px;
         font-weight: 700;
       }
@@ -59,13 +59,13 @@
           <path class="cls-4" d="M228.45,41.08c8.65,4.02,14.88,12.69,15.6,22.24.05.63.08,1.25.11,1.88-.21-1.06-.54-2.59-.82-3.65-2.02-8.53-7.66-15.67-14.89-20.47h0Z"/>
         </g>
       </g>
-      <text class="cls-3" transform="translate(36.5 238.9) rotate(20.65)"><tspan x="0" y="0">S</tspan></text>
-      <text class="cls-3" transform="translate(68.22 250.22) rotate(13.64)"><tspan x="0" y="0">i</tspan></text>
-      <text class="cls-3" transform="translate(86.06 254.77) rotate(7.97)"><tspan x="0" y="0">g</tspan></text>
-      <text class="cls-3" transform="translate(117.08 259.13) rotate(.71)"><tspan x="0" y="0">n</tspan></text>
-      <text class="cls-3" transform="translate(154.14 259.37) rotate(-6.74)"><tspan x="0" y="0">o</tspan></text>
-      <text class="cls-3" transform="translate(188.34 255.3) rotate(-15.16)"><tspan x="0" y="0">n</tspan></text>
-      <text class="cls-3" transform="translate(224.76 244.78) rotate(-24.03)"><tspan x="0" y="0">s</tspan></text>
+      <text class="cls-3" transform="translate(41.53 239.46) rotate(18.91)"><tspan x="0" y="0">S</tspan></text>
+      <text class="cls-3" transform="translate(75.38 250.31) rotate(12.54)"><tspan x="0" y="0">i</tspan></text>
+      <text class="cls-3" transform="translate(88.05 253.54) rotate(7.27)"><tspan x="0" y="0">g</tspan></text>
+      <text class="cls-3" transform="translate(121.24 257.56) rotate(.5)"><tspan x="0" y="0">n</tspan></text>
+      <text class="cls-3" transform="translate(151.67 257.83) rotate(-6.28)"><tspan x="0" y="0">o</tspan></text>
+      <text class="cls-3" transform="translate(184.68 254.08) rotate(-13.67)"><tspan x="0" y="0">n</tspan></text>
+      <text class="cls-3" transform="translate(215.64 246.32) rotate(-21.86)"><tspan x="0" y="0">s</tspan></text>
     </g>
   </g>
 </svg>
