@@ -25,6 +25,7 @@ const ThemeSwitch = () => {
       type="button"
       className="hover:translate-x-[1px] hover:translate-y-[1px]"
       onClick={toggleTheme}
+      aria-label={theme === "light" ? "Passer au thème sombre" : "Passer au thème clair"}
     >
       {theme === "light" ? (
         <Moon color="#1F1F1F" size={36} className="m-4 mx-10" />

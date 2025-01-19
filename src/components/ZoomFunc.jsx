@@ -9,6 +9,7 @@ const ZoomFunc = ({ zoomIn, zoomOut, resetZoom }) => {
         className="hover:translate-x-[1px] hover:translate-y-[1px] my-1"
         onClick={() => zoomIn()}
         style={{ transform: "scale(1)" }}
+        aria-label="Zoom avant"
       >
         <ZoomIn color="currentColor" size={46} />
       </button>
@@ -16,6 +17,7 @@ const ZoomFunc = ({ zoomIn, zoomOut, resetZoom }) => {
         type="button"
         className="hover:translate-x-[1px] hover:translate-y-[1px] my-1"
         onClick={() => resetZoom()}
+        aria-label="Réinitialiser le zoom"
       >
         <RefreshCcw color="currentColor" size={40} />
       </button>
@@ -23,6 +25,7 @@ const ZoomFunc = ({ zoomIn, zoomOut, resetZoom }) => {
         type="button"
         className="hover:translate-x-[1px] hover:translate-y-[1px] my-1"
         onClick={() => zoomOut()}
+        aria-label="Zoom arrière"
       >
         <ZoomOut color="currentColor" size={46} />
       </button>

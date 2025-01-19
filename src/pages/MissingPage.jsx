@@ -10,13 +10,15 @@ const MissingPage = () => {
       <img
         src="/vectors/404.svg"
         width={600}
-        alt="Page introuvable"
+        alt=""
+        role="presentation"
         className="p-3 m-auto dark:hidden"
       />
       <img
         src="/vectors/404Dark.svg"
         width={600}
-        alt="Page introuvable"
+        alt=""
+        role="presentation"
         className="p-3 m-auto hidden dark:block"
       />
     </main>

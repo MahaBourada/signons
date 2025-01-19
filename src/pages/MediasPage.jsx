@@ -8,16 +8,16 @@ const MediasPage = () => {
   const { searchTerm } = useSearch();
 
   return (
-    <main className="flex-grow flex flex-row my-6 mx-24 max-md:mx-6 max-lg:mx-16">
-        <div className="flex flex-col w-full max-lg:flex-col max-lg:items-center">
-          <div className="mb-6 w-3/4">
-            <h1 className="text-dynamic-2xl font-bold max-md:text-dynamic-xl max-md:leading-normal">
-              <HighlightSearch text={medias.title} searchTerm={searchTerm} />
-            </h1>
-            <p className="text-dynamic-base leading-9 text-justify ml-3 mr-1 my-1">
-              <HighlightSearch text={medias.desc} searchTerm={searchTerm} />
-            </p>
-          </div>
+    <main className="flex-grow flex flex-row mx-24 max-md:mx-6 max-lg:mx-16">
+      <div className="flex flex-col w-full max-lg:flex-col max-lg:items-center">
+        <div className="mb-6 w-3/4">
+          <h1 className="text-dynamic-2xl font-bold max-md:text-dynamic-xl max-md:leading-normal">
+            <HighlightSearch text={medias.title} searchTerm={searchTerm} />
+          </h1>
+          <p className="text-dynamic-base leading-9 text-justify ml-3 mr-1 my-1">
+            <HighlightSearch text={medias.desc} searchTerm={searchTerm} />
+          </p>
+        </div>
 
         <ul className="m-4 mx-10 max-lg:mx-0 mt-6 grid grid-cols-[1fr,1fr,1fr] max-msm:grid-cols-[1fr] max-md:grid-cols-[1fr,1fr] justify-items-center justify-self-start max-lg:justify-self-center">
           {medias.links.map((link) => (
@@ -25,13 +25,19 @@ const MediasPage = () => {
               key={link}
               label={<HighlightSearch text={link} searchTerm={searchTerm} />}
               link={`/medias/${link.toLowerCase().trim().replace(/\s+/g, "-")}`}
+              altText={link}
             />
           ))}
         </ul>
+      </div>
 
-        </div>
-
-        <img src="/vectors/MediasPic.svg" width={450} alt="Une image d'un mec chill" className="max-xl:hidden" />
+      <img
+        src="/vectors/MediasPic.svg"
+        width={450}
+        alt=""
+        role="presentation"
+        className="max-xl:hidden"
+      />
     </main>
   );
 };

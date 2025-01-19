@@ -25,6 +25,7 @@ const SearchBar = () => {
       <input
         aria-label="Rechercher dans la page"
         id="searchInput"
+        name="searchInput"
         type="text"
         className="flex-grow text-dynamic-base w-[80%] max-header:w-full h-14 rounded-full px-7 py-5 shadow-custom-box text-blackText focus:outline-none placeholder-searchText bg-bgColor dark:bg-searchBg"
         placeholder="Rechercher"
@@ -33,7 +34,7 @@ const SearchBar = () => {
       <button
         type="reset"
         className="relative"
-        aria-label="Réinitialiser"
+        aria-label="Réinitialiser la recherche"
         onClick={handleReset}
       >
         <X

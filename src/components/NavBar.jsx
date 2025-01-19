@@ -1,4 +1,3 @@
-import { Link } from "lucide-react";
 import React from "react";
 import SearchBar from "./SearchBar";
 import { NavLink } from "react-router-dom";

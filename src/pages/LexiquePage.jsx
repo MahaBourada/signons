@@ -25,7 +25,8 @@ const LexiquePage = () => {
             .toLowerCase()
             .trim()
             .replace(/\s+/g, "-")}`}
-            className="max-lg:w-full max-lg:flex max-lg:flex-col max-lg:items-center"
+          className="max-lg:w-full max-lg:flex max-lg:flex-col max-lg:items-center"
+          aria-label="Découvrir l'alphabet de la LSF"
         >
           <LexiqueCard
             label={
@@ -54,7 +55,8 @@ const LexiquePage = () => {
             .toLowerCase()
             .trim()
             .replace(/\s+/g, "-")}`}
-            className="max-lg:flex max-lg:flex-col max-lg:items-center"
+          className="max-lg:flex max-lg:flex-col max-lg:items-center"
+          aria-label="Découvrir le vocabulaire de la LSF"
         >
           <LexiqueCard
             label={
@@ -65,11 +67,11 @@ const LexiquePage = () => {
             }
             desc={
               <HighlightSearch
-              text={
-                lexique.lexique[1].desc.length > 80
-                  ? lexique.lexique[1].desc.slice(0, 80) + "..."
-                  : lexique.lexique[1].desc
-              }
+                text={
+                  lexique.lexique[1].desc.length > 80
+                    ? lexique.lexique[1].desc.slice(0, 80) + "..."
+                    : lexique.lexique[1].desc
+                }
                 searchTerm={searchTerm}
               />
             }

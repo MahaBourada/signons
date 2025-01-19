@@ -1,12 +1,14 @@
 import React from "react";
 
-const NewsCard = ({ label, category, date, img, link }) => {
+const NewsCard = ({ label, altText, category, date, img, link }) => {
   const truncatedLabel = label.length > 50 ? label.slice(0, 50) + "..." : label;
 
   return (
     <a
       href={link}
       target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Visiter le lien externe pour ${altText}`}
       className="flex items-start hover:underline hover:translate-x-[1px] hover:translate-y-[1px]"
     >
       <div className="text-justify w-full ml-1 mr-5 my-7 leading-normal">

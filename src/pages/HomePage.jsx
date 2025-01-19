@@ -40,9 +40,9 @@ const HomePage = () => {
       </section>
 
       <article className="w-[43%] max-md:w-fit max-lg:w-[43%] max-md:mx-5 max-xl:mx-4 max-xl:mt-5">
-        <h1 className="text-dynamic-lg font-bold bg-main rounded-full w-fit px-7 py-1 dark:bg-darkMain max-sm:text-dynamic-base max-md:text-dynamic-lg max-lg:leading-snug max-lg:py-2 max-lg:text-center max-sm:m-auto max-sm:px-4">
+        <h2 className="text-dynamic-lg font-bold bg-main rounded-full w-fit px-7 py-1 dark:bg-darkMain max-sm:text-dynamic-base max-md:text-dynamic-lg max-lg:leading-snug max-lg:py-2 max-lg:text-center max-sm:m-auto max-sm:px-4">
           <HighlightSearch text={accueil.news.title} searchTerm={searchTerm} />
-        </h1>
+        </h2>
         <div className="ml-4 mb-5 max-sm:mx-4">
           {accueil.news.news.map((article) => (
             <>
@@ -54,6 +54,7 @@ const HomePage = () => {
                     searchTerm={searchTerm}
                   />
                 }
+                altText={article.title}
                 category={
                   <HighlightSearch
                     text={article.category}
@@ -76,6 +77,8 @@ const HomePage = () => {
           <a
             href="https://www.media-pi.fr/"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visiter le lien externe pour Médiapi"
             className="flex justify-end text-dynamic-sm hover:underline hover:translate-x-[1px] hover:translate-y-[1px] max-sm:text-dynamic-xsm max-md:text-dynamic-sm max-lg:text-dynamic-xsm max-lg:text-start"
           >
             <span className="font-bold">Source : </span>https://www.media-pi.fr/

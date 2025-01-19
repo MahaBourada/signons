@@ -12,98 +12,114 @@ const HistoirePage = () => {
   const { searchTerm } = useSearch();
 
   return (
-    <main className="flex-grow my-10 mx-24 max-lg:mx-2 grid grid-cols-2 max-lg:gap-x-0 max-xl:gap-x-10 max-lg:flex max-lg:flex-col place-self-center m-auto gap-y-16">
-      <Link
-        to={`/histoire/${histoireAntiquite.title
-          .toLowerCase()
-          .trim()
-          .replace(/\s+/g, "-")}`}
-      >
-        <HistoireCard
-          label={
-            <HighlightSearch
-              text={histoireAntiquite.title}
-              searchTerm={searchTerm}
-            />
-          }
-          desc={
-            <HighlightSearch
-              text={histoireAntiquite.desc}
-              searchTerm={searchTerm}
-            />
-          }
-          img={histoireAntiquite.img}
+    <main className="flex-grow mx-24">
+      <h1 className="text-dynamic-2xl font-bold max-lg:text-dynamic-xl max-lg:leading-normal mb-10">
+        <HighlightSearch
+          text="Histoire des langues des signes à travers le monde"
+          searchTerm={searchTerm}
         />
-      </Link>
+      </h1>
+      <div className="grid grid-cols-2 max-lg:gap-x-0 max-xl:gap-x-10 max-lg:flex max-lg:flex-col place-self-center m-auto gap-y-16 max-lg:mx-2 ">
+        <Link
+          to={`/histoire/${histoireAntiquite.title
+            .toLowerCase()
+            .trim()
+            .replace(/\s+/g, "-")}`}
+          aria-label={`Explorer l'histoire - ${histoireAntiquite.title}`}
+        >
+          <HistoireCard
+            label={
+              <HighlightSearch
+                text={histoireAntiquite.title}
+                searchTerm={searchTerm}
+              />
+            }
+            altText={histoireAntiquite.title}
+            desc={
+              <HighlightSearch
+                text={histoireAntiquite.desc}
+                searchTerm={searchTerm}
+              />
+            }
+            img={histoireAntiquite.img}
+          />
+        </Link>
 
-      <Link
-        to={`/histoire/${histoireChine.title
-          .toLowerCase()
-          .trim()
-          .replace(/\s+/g, "-")}`}
-      >
-        <HistoireCard
-          label={
-            <HighlightSearch
-              text={histoireChine.title}
-              searchTerm={searchTerm}
-            />
-          }
-          desc={
-            <HighlightSearch
-              text={histoireChine.desc}
-              searchTerm={searchTerm}
-            />
-          }
-          img={histoireChine.img}
-        />
-      </Link>
+        <Link
+          to={`/histoire/${histoireChine.title
+            .toLowerCase()
+            .trim()
+            .replace(/\s+/g, "-")}`}
+          aria-label={`Explorer l'histoire - ${histoireChine.title}`}
+        >
+          <HistoireCard
+            label={
+              <HighlightSearch
+                text={histoireChine.title}
+                searchTerm={searchTerm}
+              />
+            }
+            altText={histoireChine.title}
+            desc={
+              <HighlightSearch
+                text={histoireChine.desc}
+                searchTerm={searchTerm}
+              />
+            }
+            img={histoireChine.img}
+          />
+        </Link>
 
-      <Link
-        to={`/histoire/${histoireEtatsUnis.title
-          .toLowerCase()
-          .trim()
-          .replace(/\s+/g, "-")}`}
-      >
-        <HistoireCard
-          label={
-            <HighlightSearch
-              text={histoireEtatsUnis.title}
-              searchTerm={searchTerm}
-            />
-          }
-          desc={
-            <HighlightSearch
-              text={histoireEtatsUnis.desc}
-              searchTerm={searchTerm}
-            />
-          }
-          img={histoireEtatsUnis.img}
-        />
-      </Link>
+        <Link
+          to={`/histoire/${histoireEtatsUnis.title
+            .toLowerCase()
+            .trim()
+            .replace(/\s+/g, "-")}`}
+          aria-label={`Explorer l'histoire - ${histoireEtatsUnis.title}`}
+        >
+          <HistoireCard
+            label={
+              <HighlightSearch
+                text={histoireEtatsUnis.title}
+                searchTerm={searchTerm}
+              />
+            }
+            altText={histoireEtatsUnis.title}
+            desc={
+              <HighlightSearch
+                text={histoireEtatsUnis.desc}
+                searchTerm={searchTerm}
+              />
+            }
+            img={histoireEtatsUnis.img}
+          />
+        </Link>
 
-      <Link
-        to={`/histoire/${histoireChine.title
-          .toLowerCase()
-          .trim()
-          .replace(/\s+/g, "-")}`}
-      >
-        <HistoireCard
-          label={
-            <HighlightSearch
-              text={histoireJapon.title}
-              searchTerm={searchTerm}
-            />
-          }
-          desc={
-            <HighlightSearch
-              text={histoireJapon.desc}
-              searchTerm={searchTerm}
-            />
-          }
-          img={histoireJapon.img}
-        />
-      </Link>
+        <Link
+          to={`/histoire/${histoireJapon.title
+            .toLowerCase()
+            .trim()
+            .replace(/\s+/g, "-")}`}
+          aria-label={`Explorer l'histoire - ${histoireJapon.title}`}
+        >
+          <HistoireCard
+            label={
+              <HighlightSearch
+                text={histoireJapon.title}
+                searchTerm={searchTerm}
+              />
+            }
+            altText={histoireJapon.title}
+            desc={
+              <HighlightSearch
+                text={histoireJapon.desc}
+                searchTerm={searchTerm}
+              />
+            }
+            img={histoireJapon.img}
+          />
+        </Link>
+      </div>
     </main>
   );
 };

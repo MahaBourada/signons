@@ -55,13 +55,13 @@ const Header = () => {
                   <img
                     src={"/vectors/SmallLogo.svg"}
                     width={95}
-                    alt="Logo Signons"
+                    alt="Signons - Aller à la page d'accueil"
                     className="dark:hidden w-24"
                   />
                   <img
                     src={"/vectors/DarkSmallLogo.svg"}
                     width={95}
-                    alt="Logo Signons"
+                    alt="Signons - Aller à la page d'accueil"
                     className="hidden dark:block w-24"
                   />
                 </Link>
@@ -90,13 +90,13 @@ const Header = () => {
             <img
               src={"/vectors/Logo.svg"}
               width={500}
-              alt="Logo Signons"
+              alt="Signons - Aller à la page d'accueil"
               className="dark:hidden w-[14rem] max-header:w-52"
             />
             <img
               src={"/vectors/LogoDark.svg"}
               width={500}
-              alt="Logo Signons"
+              alt="Signons - Aller à la page d'accueil"
               className="hidden dark:block w-[14rem] max-header:w-52"
             />
           </Link>
