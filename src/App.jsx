@@ -11,7 +11,7 @@ import { SearchProvider } from "./context/SearchContext";
 function App() {
   return (
     <SearchProvider>
-      <Router>
+      <Router basename={import.meta.env.VITE_APP_BASE_URL}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
