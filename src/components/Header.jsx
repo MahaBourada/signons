@@ -21,13 +21,13 @@ const Header = () => {
         <div className="hidden max-md:flex flex-row items-center w-full justify-between">
           <Link to="/" className="p-1 max-md:block hidden">
             <img
-              src={"/signons/vectors/SmallLogo.svg"}
+              src={"/vectors/SmallLogo.svg"}
               width={95}
               alt="Logo Signons"
               className="dark:hidden w-32"
             />
             <img
-              src={"/signons/vectors/DarkSmallLogo.svg"}
+              src={"/vectors/DarkSmallLogo.svg"}
               width={95}
               alt="Logo Signons"
               className="hidden dark:block w-32"
@@ -53,13 +53,13 @@ const Header = () => {
               <div className="hidden max-md:flex flex-row items-center justify-between w-full">
                 <Link to="/" className="p-1 max-md:block hidden">
                   <img
-                    src={"/signons/vectors/SmallLogo.svg"}
+                    src={"/vectors/SmallLogo.svg"}
                     width={95}
                     alt="Signons - Aller à la page d'accueil"
                     className="dark:hidden w-24"
                   />
                   <img
-                    src={"/signons/vectors/DarkSmallLogo.svg"}
+                    src={"/vectors/DarkSmallLogo.svg"}
                     width={95}
                     alt="Signons - Aller à la page d'accueil"
                     className="hidden dark:block w-24"
@@ -88,13 +88,13 @@ const Header = () => {
         {/* <div className="flex flex-row items-stretch justify-between w-full bg-red-300"> */}
           <Link to="/" className="p-1 max-md:hidden">
             <img
-              src={"/signons/vectors/Logo.svg"}
+              src={"/vectors/Logo.svg"}
               width={500}
               alt="Signons - Aller à la page d'accueil"
               className="dark:hidden w-[14rem] max-header:w-52"
             />
             <img
-              src={"/signons/vectors/LogoDark.svg"}
+              src={"/vectors/LogoDark.svg"}
               width={500}
               alt="Signons - Aller à la page d'accueil"
               className="hidden dark:block w-[14rem] max-header:w-52"
