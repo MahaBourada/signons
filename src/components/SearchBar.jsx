@@ -16,7 +16,7 @@ const SearchBar = () => {
 
   return (
     <form
-      className="flex-grow flex items-center justify-center shadow-boxShadow m-10 max-xl:m-1 max-xl:my-5 max-header:mr-28 max-header:w-full"
+      className="flex-grow flex items-center justify-center shadow-boxShadow m-10 max-xl:m-1 max-xl:my-5 max-header:mr-28 w-[70%] mx-auto max-header:w-full"
       onSubmit={handleSubmit}
     >
       <label htmlFor="searchInput" className="absolute right-[5555px]">
