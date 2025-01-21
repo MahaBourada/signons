@@ -1,5 +1,16 @@
 {
-    "title": "Chine",
-    "desc": "Saviez-vous que la langue des signes chinoise (LSC) a des racines profondes dans l'histoire du pays ? Avec des variations régionales et une forte connexion à la culture chinoise, la LSC a joué un rôle important dans l'éducation et l'intégration des communautés sourdes. Explorez les particularités de cette langue et son évolution à travers les âges.",
-    "img": "images/Chine.png"
+  "title": "Chine",
+  "desc": "Saviez-vous que la langue des signes chinoise (LSC) a des racines profondes dans l'histoire du pays ? Avec des variations régionales et une forte connexion à la culture chinoise, la LSC a joué un rôle important dans l'éducation et l'intégration des communautés sourdes. Explorez les particularités de cette langue et son évolution à travers les âges.",
+  "img": "images/Chine.png",
+  "article": "La langue des signes chinoise (LSC), connue sous le nom de « Zhōngguó Shǒuyǔ » ou « langue des signes han », a des origines qui remontent au XIVe siècle. Elle s'est développée naturellement au sein de la culture chinoise, intégrant des éléments du chinois signé et des signes propres à la communauté sourde chinoise. En 1887, le missionnaire C.R. Mills et son épouse ont fondé la première école pour sourds en Chine, utilisant une approche orale. Bien que ces fondateurs fussent américains, la langue des signes américaine (ASL) n'a pas eu une influence significative sur la LSC. Au fil du temps, la LSC a évolué et s'est standardisée, reflétant les particularités linguistiques et culturelles de la Chine. Ces aperçus historiques montrent que, malgré des perceptions souvent limitées, les personnes sourdes ont toujours cherché à communiquer, développant des systèmes de signes adaptés à leur environnement socioculturel.",
+  "bibliographie": {
+    "1": {
+      "lien": "https://fr.wikipedia.org/wiki/Langue_des_signes_chinoise",
+      "nom": "Wikipédia - Langue des signes chinoise"
+    },
+    "2": {
+      "lien": "https://www.studysmarter.fr/resumes/chinois/grammaire-chinoise/langue-des-signes-chinoise",
+      "nom": "StudySmarter - Langue des signes chinoise"
+    }
+  }
 }

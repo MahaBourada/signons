@@ -7,6 +7,8 @@ import LexiquePage from "./pages/LexiquePage";
 import MediasPage from "./pages/MediasPage";
 import MissingPage from "./pages/MissingPage";
 import { SearchProvider } from "./context/SearchContext";
+import AntiquitePage from "./pages/AntiquitePage";
+import ChinePage from "./pages/ChinePage";
 
 function App() {
   return (
@@ -16,7 +18,11 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
             <Route path="origine" element={<OriginePage />} />
-            <Route path="histoire" element={<HistoirePage />} />
+            <Route path="histoire">
+              <Route index element={<HistoirePage />} />
+              <Route path="antiquité" element={<AntiquitePage />} />
+              <Route path="chine" element={<ChinePage />} />
+            </Route>
             <Route path="lexique" element={<LexiquePage />} />
             <Route path="medias" element={<MediasPage />} />
             <Route path="*" element={<MissingPage />} />

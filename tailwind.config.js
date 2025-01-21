@@ -50,7 +50,7 @@ export default {
       },
       fontFamily: {
         mainFont: "'Kodchasan', 'sans-serif'",
-        bodyFont: "'Atkinson Hyperlegible', 'sans-serif'",
+        bodyFont: "'Spinnaker', 'sans-serif'",
       },
       boxShadow: {
         "custom-box": "2px 2px 3px 1px rgb(0 0 0 / 25%)",

@@ -1,5 +1,16 @@
 {
-    "title": "Antiquité",
-    "desc": "L'histoire de la communication gestuelle remonte à l'Antiquité, où les signes étaient utilisés pour pallier les barrières de la langue parlée. Bien que ces pratiques ne soient pas formalisées comme les langues des signes modernes, elles démontrent l'ingéniosité humaine pour échanger des idées. Apprenez-en davantage sur ces racines historiques et leur influence sur les civilisations futures.",
-    "img": "images/Antiquite.png"
+  "title": "Antiquité",
+  "desc": "L'histoire de la communication gestuelle remonte à l'Antiquité, où les signes étaient utilisés pour pallier les barrières de la langue parlée. Bien que ces pratiques ne soient pas formalisées comme les langues des signes modernes, elles démontrent l'ingéniosité humaine pour échanger des idées. Apprenez-en davantage sur ces racines historiques et leur influence sur les civilisations futures.",
+  "img": "images/Antiquite.png",
+  "article": "Dans l'Antiquité, la perception des personnes sourdes était souvent liée à leur capacité à parler. Aristote, par exemple, associait l'intelligence à la parole, déclarant que « la faculté d'apprendre appartient à l'être qui, en plus de la mémoire, est pourvu du sens de l'ouïe ». Cette vision limitait la reconnaissance des capacités des sourds et entravait le développement de langues des signes structurées. Néanmoins, des témoignages indiquent que des formes de communication gestuelle existaient. Platon, dans son dialogue \"Cratyle\", mentionne que si les humains n'avaient ni voix ni langue, ils utiliseraient des gestes pour communiquer, tout comme le font les muets. Cependant, ces systèmes gestuels restaient souvent rudimentaires en raison de l'isolement des personnes sourdes, les empêchant de développer une langue des signes riche et structurée.",
+  "bibliographie": {
+    "1": {
+      "lien": "https://fr.wikipedia.org/wiki/Histoire_de_la_langue_des_signes",
+      "nom": "Wikipédia - Histoire de la langue des signes"
+    },
+    "2": {
+      "lien": "https://www.surdi.info/langue-des-signes-francaise-lsf/langue-des-signes-siecles-histoire",
+      "nom": "Surdi Info Service - La langue des signes : des siècles d'histoire"
+    }
+  }
 }
