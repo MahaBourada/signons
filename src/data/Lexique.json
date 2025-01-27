@@ -3,8 +3,34 @@
   "desc": "Cette section est dédiée à l'apprentissage des bases essentielles de la LSF. Que vous soyez débutant ou que vous souhaitiez approfondir vos connaissances, vous y trouverez des ressources clés pour explorer cette langue visuelle et riche de sens.",
   "lexique": [
     {
-      "title": "Alphabet",
-      "desc": "Découvrez comment signer chaque lettre de l'alphabet et apprenez à épeler des mots ou des noms."
+      "title": "Dactylologie",
+      "desc": "Découvrez comment signer chaque lettre de l'alphabet et apprenez à épeler des mots ou des noms.",
+      "pays": [
+        {
+          "nom": "France",
+          "img": "images/DacFrance.jpg"
+        },
+        {
+          "nom": "Arabie Saoudite",
+          "img": "images/DacArabie.jpg"
+        },
+        {
+          "nom": "Chine",
+          "img": "images/DacChine.jpg"
+        },
+        {
+          "nom": "Allemagne",
+          "img": "images/DacAllemagne.png"
+        },
+        {
+          "nom": "Italie",
+          "img": "images/DacItalie.jpg"
+        },
+        {
+          "nom": "Etats-Unis",
+          "img": "images/DacUSA.png"
+        }
+      ]
     },
     {
       "title": "Vocabulaire",

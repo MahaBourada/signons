@@ -21,7 +21,7 @@ const HighlightSearch = ({ text, searchTerm }) => {
     part.toLowerCase() === searchTerm.toLowerCase() ? (
       <mark //Screen readers typically announce text wrapped in a <mark> element.
         key={index}
-        className="bg-darkSecondary text-whiteText dark:bg-secondary dark:text-blackText rounded-lg px-2"
+        className="bg-darkSecondary text-whiteText dark:bg-secondary dark:text-blackText rounded-lg p-1"
       >
         {part}
       </mark>

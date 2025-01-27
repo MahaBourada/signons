@@ -1,5 +1,50 @@
 {
   "title": "Ressources pour découvrir la LSF",
   "desc": "La page Médias met à votre disposition des ressources variées pour explorer la Langue des Signes Française (LSF) et mieux comprendre son univers. Vous y découvrirez une sélection de contenus multimédias tels que :",
-  "links": ["Films", "Séries TV", "Documentaires", "Vidéos", "Ouvrages"]
+  "links": ["Films", "Séries TV", "Documentaires", "Vidéos", "Ouvrages"],
+  "films": [
+    {
+      "nom": "Delivrance",
+      "annee": "1919",
+      "duree": "90 Min",
+      "img": "images/FilmDeliverance.png",
+      "desc": "L'histoire vraie d'Helen Keller, né sourd et aveugle, a été considéré comme un cas désespéré, mais qui, par la diligence de l'aide des enseignants Anne Sullivan est devenu une figure célèbre de la réalisation et la brillance, ainsi que d'un exemple de la puissance de l'âme humaine à surmonter l'adversité.",
+      "realisateur": "George Foster Platt",
+      "categorie": "Documentaire",
+      "acteurs": [
+        { "0": "Etna Ross (Helen Keller)" },
+        { "1": "Helen Keller (Helen Keller)" },
+        { "2": "Tula Belle (Nadja)" },
+        { "3": "Edith Lyle (Anne Sullivan)" }
+      ]
+    },
+    {
+      "nom": "La Maison Grise",
+      "annee": "1932",
+      "duree": "75 Min",
+      "img": "images/FilmLaMaisonGrise.jpg",
+      "desc": "Perdus dans la solitude des montagnes galloises, Philip, sa femme Margaret et Roger vont chercher refuge contre un violent orage dans une vielle maison toute proche. Les gens qui l'habitent sont bizarres : Horace, athée original, sa soeur Rebecca, fanatique religieuse et Morgan, leur maître d'hôtel, lourdaud et muet qui a des crises de folie meurtrière lorsqu'il est ivre. Philip et Margaret découvrent le vieux patriarche, Sir Roderick Femme, qui leur apprend que son fils aîné Saul est un pyromane que Morgan tient enfermé…",
+      "realisateur": "Josh Aronson",
+      "categorie": "Horreur",
+      "acteurs": [
+        { "0": "Boris Karloff (Morgan - Muet)" },
+        { "1": "Melvyn Douglas (Kitty Norton)" },
+        { "2": "Melvyn Douglas (Kitty Norton)" },
+        { "3": "Barbara Murray (Patricia Pedelty)" }
+      ]
+    },
+    {
+      "nom": "The Sphinx",
+      "annee": "1933",
+      "duree": "68 Min",
+      "img": "images/FilmTheSphinx.jpg",
+      "desc": "Fait participer les jumeaux un de qui est sourd. Le jumeau sourd est employé comme alibi par l'autre. Il y a également un bossu \"fou\" qui est le suspect pour un certain nombre de meurtres",
+      "realisateur": "Phil Rosen",
+      "categorie": "Policier",
+      "acteurs": [
+        { "0": "Lionel Atwill (Jerome Breen)" },
+        { "1": "Shelia Terry (Jerry Crane)" }
+      ]
+    }
+  ]
 }

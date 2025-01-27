@@ -9,6 +9,9 @@ import MissingPage from "./pages/MissingPage";
 import { SearchProvider } from "./context/SearchContext";
 import AntiquitePage from "./pages/AntiquitePage";
 import ChinePage from "./pages/ChinePage";
+import VocabulairePage from "./pages/VocabulairePage";
+import AlphabetPage from "./pages/AlphabetPage";
+import FilmsPage from "./pages/FilmsPage";
 
 function App() {
   return (
@@ -23,8 +26,15 @@ function App() {
               <Route path="antiquité" element={<AntiquitePage />} />
               <Route path="chine" element={<ChinePage />} />
             </Route>
-            <Route path="lexique" element={<LexiquePage />} />
-            <Route path="medias" element={<MediasPage />} />
+            <Route path="lexique">
+              <Route index element={<LexiquePage />} />
+              <Route path="dactylologie" element={<AlphabetPage />} />
+              <Route path="vocabulaire" element={<VocabulairePage />} />
+            </Route>
+            <Route path="medias">
+              <Route index element={<MediasPage />} />
+              <Route path="films" element={<FilmsPage />} />
+            </Route>
             <Route path="*" element={<MissingPage />} />
           </Route>
         </Routes>
