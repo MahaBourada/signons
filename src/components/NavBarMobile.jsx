@@ -4,14 +4,12 @@ import ThemeSwitch from "./ThemeSwitch";
 
 const NavBarMobile = ({ closeMenu }) => {
   return (
-    <div className="flex flex-col items-center h-full">
-      <nav className="flex flex-col justify-between items-center font-bold text-dynamic-lg space-y-4">
+    <div className="flex flex-col items-center h-full w-full">
+      <nav className="flex flex-col justify-between items-center font-bold text-dynamic-lg space-y-4 w-full">
         <NavLink
           to="/origine"
           className={({ isActive }) =>
-            isActive
-              ? "underline mx-3"
-              : "hover:underline hover:translate-x-[1px] hover:translate-y-[1px] mx-3"
+            isActive && "underline mx-3 bg-secondary dark:bg-darkSecondary w-full text-center py-2"
           }
           onClick={closeMenu}
         >
@@ -20,9 +18,7 @@ const NavBarMobile = ({ closeMenu }) => {
         <NavLink
           to="/histoire"
           className={({ isActive }) =>
-            isActive
-              ? "underline mx-3"
-              : "hover:underline hover:translate-x-[1px] hover:translate-y-[1px] mx-3"
+            isActive && "underline mx-3 bg-secondary dark:bg-darkSecondary w-full text-center py-2"
           }
           onClick={closeMenu}
         >
@@ -31,9 +27,7 @@ const NavBarMobile = ({ closeMenu }) => {
         <NavLink
           to="/lexique"
           className={({ isActive }) =>
-            isActive
-              ? "underline mx-3"
-              : "hover:underline hover:translate-x-[1px] hover:translate-y-[1px] mx-3"
+            isActive && "underline mx-3 bg-secondary dark:bg-darkSecondary w-full text-center py-2"
           }
           onClick={closeMenu}
         >
@@ -42,9 +36,7 @@ const NavBarMobile = ({ closeMenu }) => {
         <NavLink
           to="/medias"
           className={({ isActive }) =>
-            isActive
-              ? "underline mx-3"
-              : "hover:underline hover:translate-x-[1px] hover:translate-y-[1px] mx-3"
+            isActive && "underline mx-3 bg-secondary dark:bg-darkSecondary w-full text-center py-2"
           }
           onClick={closeMenu}
         >

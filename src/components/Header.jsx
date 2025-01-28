@@ -24,13 +24,13 @@ const Header = () => {
               src={"/signons/vectors/SmallLogo.svg"}
               width={95}
               alt="Logo Signons"
-              className="dark:hidden w-32"
+              className="dark:hidden w-28"
             />
             <img
               src={"/signons/vectors/DarkSmallLogo.svg"}
               width={95}
               alt="Logo Signons"
-              className="hidden dark:block w-32"
+              className="hidden dark:block w-28"
             />
           </Link>
 
@@ -50,29 +50,29 @@ const Header = () => {
 
         {show && (
           <div className="fixed top-0 left-0 w-full h-full bg-white dark:bg-darkBg text-blackText dark:text-whiteText z-50">
-            <div className="flex flex-col items-center p-4">
-              <div className="hidden max-md:flex flex-row items-center justify-between w-full">
-                <Link to="/" className="p-1 max-md:block hidden">
+            <div className="flex flex-col items-center">
+              <div className="hidden max-md:flex flex-row items-center justify-between w-full m-4">
+                <Link to="/" className="p-1 mx-5 max-md:block hidden">
                   <img
                     src={"/signons/vectors/SmallLogo.svg"}
                     width={95}
                     alt="Signons - Aller à la page d'accueil"
-                    className="dark:hidden w-24"
+                    className="dark:hidden w-28"
                   />
                   <img
                     src={"/signons/vectors/DarkSmallLogo.svg"}
                     width={95}
                     alt="Signons - Aller à la page d'accueil"
-                    className="hidden dark:block w-24"
+                    className="hidden dark:block w-28"
                   />
                 </Link>
                 <button
                   type="button"
                   onClick={toggleMenu}
                   aria-label="Fermer le menu de navigation"
-                  className="m-2"
+                  className="m-2 mx-8 mt-7"
                 >
-                  <X size={40} color="currentColor" strokeWidth={3} />
+                  <X size={45} color="currentColor" strokeWidth={3} />
                 </button>
               </div>
               <NavBarMobile closeMenu={closeMenu} />

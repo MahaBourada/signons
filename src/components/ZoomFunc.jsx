@@ -3,7 +3,7 @@ import { RefreshCcw, ZoomIn, ZoomOut } from "lucide-react";
 
 const ZoomFunc = ({ zoomIn, zoomOut, resetZoom }) => {
   return (
-    <div className="fixed bottom-12 left-8 max-lg:bottom-5 flex flex-col max-lg:flex-row text-blackText dark:text-whiteText z-50">
+    <div className="fixed bottom-12 left-8 max-lg:bottom-5 flex flex-col max-lg:flex-row text-blackText dark:text-whiteText z-50 max-md:hidden">
       <button
         type="button"
         className="hover:translate-x-[1px] hover:translate-y-[1px] my-1"
